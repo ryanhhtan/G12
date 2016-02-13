@@ -1,0 +1,104 @@
+
+
+body {
+	color: white;
+	background-color: black;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+	width: 100%;
+	height: 100px;	
+}
+
+
+#logo {
+	float: left;
+}
+#navigation {
+
+	width: 50%;
+	float: right;
+
+}
+
+#navigation ul , #navigation li{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#menubar {
+	width: 100%;
+}
+
+#mainmenu li {
+	width: 18.5%;
+	font-size: 20px;
+	display: inline-block;
+	margin:0px;
+
+}
+
+#menuitemarea {
+	position: relative;
+	height: 100px;
+}
+
+#menuitemarea li {
+	width: 30%;
+}
+.menuitems {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+#livinginfo {
+	padding-left: 18.5%;
+}
+
+#interaction {
+	padding-left: 38%;	
+}
+
+li:hover {
+	background-color: green;
+}
+
+#content {
+	width: 800px;
+	margin: auto;
+
+}
+
+.galleries {
+	width: 300px;
+	height: 300px;
+	border: 1px solid yellow;
+}
+
+#slogan {
+	width: 100%;
+	font-size: 30px;
+	color: orange;
+	text-align: center;
+}
+
+#galleriesarea {
+	position: relative;
+}
+
+#studygallery {
+	position: absolute;
+	left: 50px;
+	top: 0;
+}
+
+#livinggallery{
+	position: absolute;
+	left: 450px;
+	top: 0;
+}

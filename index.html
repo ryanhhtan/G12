@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Servival Guide for International Students </title>
+		<link href="style/base.css" rel="stylesheet" type="text/css">
+	</head>
+	<!--content-->
+	<body>
+		<!--header with logo, navigation-->
+		<div id="header">
+			<!--logo-->
+			<div id="logo">
+			<img src="images/logo.png" title="logo" alt="Logo" style="width: 100px; height: 100px">
+			</div>
+			<!--navigation bar, fixed at the top-->
+			<div id="navigation">
+				<div id="menubar">
+					<ul id="mainmenu">
+						<li id="studyinformenu">Study Info</li>
+						<li id="livinginformenu">Living Info</li>
+						<li id="interactingmenu">Interacting</li>
+						<li id="aboutmenu">About Us</li>
+						<li id="sitemapmenu">Sitemap</li>
+					</ul>
+				</div>
+				
+
+				<div id="menuitemarea">
+					<div id="studyinfo" class="menuitems">
+						<ul class="submenu">
+							<li>BCIT</li>
+							<li>UBC</li>
+							<li>SFU</li>
+							<li>Langara</li>
+						</ul>
+					</div>
+					<div id="livinginfo" class="menuitems">
+						<ul  class="submenu">
+							<li>Immigration & Taxes</li>
+							<li>Sight Viewing</li>
+							<li>Entertainment</li>
+							<li>Helth Insurance</li>
+						</ul>
+					</div>
+					<div id="interaction" class="menuitems">
+						<ul  class="submenu">
+							<li>Contact Us</li>
+							<li>Comments</li>
+						</ul>
+					</div>			
+				</div>
+
+			</div>
+		</div>
+		
+		<!--conten-->
+		<div id="content">
+			<div id="slogan"><p>Our Slogan</p></div>
+			<div id="galleriesarea">
+				<div id="studygallery" class="galleries">
+					<a href=# title="Study information section">
+						<img id="schoolPhotos" title="schools" src="images/bcit.jpg" alt="study information picture">
+					</a>
+				</div>
+				<div id="livinggallery" class="galleries">
+					<a href=# title="Living information section">
+						<img id="livingPhotos" title="living info" src="images/entertainment.jpg" alt="living information picture">
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<script language=javascript>
+			document.getElementById("studyinformenu").onmouseover = function(){showStudentInfo()};
+			document.getElementById("livinginformenu").onmouseover = function(){showLivingInfo()};
+			document.getElementById("interactingmenu").onmouseover = function(){showInteractingInfo()};
+			document.getElementById("studyinfo").addEventListener('mouseout',hideStudentInfo,true);
+			document.getElementById("livinginfo").onmouseout = function(){hideLivingInfo()};
+			document.getElementById("interaction").onmouseout = function(){hideInteractingInfo()};
+
+			
+												
+			function showStudentInfo() {
+			document.getElementById("studyinfo").style.visibility = "visible";
+			}
+			
+			function showLivingInfo() {	
+			document.getElementById("livinginfo").style.visibility = "visible";
+			}
+			
+			function showInteractingInfo() {
+			document.getElementById("interaction").style.visibility = "visible";
+			}
+			
+			
+			function hideStudentInfo(event) {
+			var e = event.toElement || event.relatedTarget;
+			if (e.parentNode == this || e == this){
+				return;
+			}
+			document.getElementById("studyinfo").style.visibility = "hidden";
+			}
+			
+			function hideLivingInfo() {	
+			document.getElementById("livinginfo").style.visibility = "hidden";
+			}
+			
+			function hideInteractingInfo() {
+			document.getElementById("interaction").style.visibility = "hidden";
+			}
+
+		</script>
+		
+		<script>
+			var curIndexStudy=0;
+			var curIndexLiving=0;
+			
+			var timeIntervalStudy=4000;
+			var timeIntervalLiving=5000;
+			
+			var schoolPhotoset = new Array();
+			schoolPhotoset[0]="images/bcit.jpg";
+			schoolPhotoset[1]="images/ubc.jpg";
+			schoolPhotoset[2]="images/sfu.jpg";
+			schoolPhotoset[3]="images/langara.jpg";
+			
+			var livingPhotoset = new Array();
+			livingPhotoset[0]="images/entertainment.jpg";
+			livingPhotoset[1]="images/tax.jpg";
+			livingPhotoset[2]="images/health.jpg";
+			livingPhotoset[3]="images/sightview.jpg";
+			
+			
+			setInterval(changePhotoStudy, timeIntervalStudy);
+			setInterval(changePhotoLiving, timeIntervalLiving);
+
+			
+			function changePhotoStudy () {
+				var schoolGallery = document.getElementById("schoolPhotos");
+				if (curIndexStudy == schoolPhotoset.length-1) {
+				curIndexStudy = 0;
+				} else {
+				curIndexStudy++;
+				}
+				schoolGallery.src = schoolPhotoset[curIndexStudy];
+			}
+			
+			function changePhotoLiving () {
+				var livingGallery = document.getElementById("livingPhotos");
+				if (curIndexLiving == livingPhotoset.length-1) {
+				curIndexLiving = 0;
+				} else {
+				curIndexLiving++;
+				}
+				livingGallery.src = livingPhotoset[curIndexLiving];
+			}
+		
+		</script>
+		<footer>
+		</footer>	
+	</body>
+
+
+</html>

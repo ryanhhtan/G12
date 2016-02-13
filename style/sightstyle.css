@@ -1,0 +1,97 @@
+body		{background-color:white;
+
+}
+.webName{	
+			
+			top:0;
+			height: 100px;
+			margin:0;
+		
+}
+.h1		{	font-weight:bold;
+			color: #990099;
+			float:left;
+		
+}
+nav		{	float:right;	
+			padding-right:20px;
+			padding-top:20px;
+}
+nav ul	{	list-style-type: none;}
+
+nav li 	{	display: inline;
+			
+}
+nav a 	{	text-decoration: none;
+			padding: 10px;
+			font-size:20px;
+			font-weight:bold;			
+}
+nav a:link {color:#000000;}
+nav a:hover {color: #99ff99;
+}
+nav a:visited {color: #66c2ff;
+}
+.main	{	
+			background-color:#e6ffff;
+
+}
+.header  {	text-align: center;
+			background-image: url("vancouver-1.jpg");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			height:250px;
+			font-size: 35px;
+			padding-top:60px;
+			color: rgba(255, 255,255,0.7);
+			letter-spacing:0.5em;
+			
+}
+.content {	width:950px;
+			margin:auto;
+			overflow: auto;
+			
+}
+div ul 	{	list-style-type: none;
+			
+}
+div li 	{	display: inline;
+			
+			padding-right: 80px;
+			font-size:20px;
+			font-weight: bold;
+			
+}
+
+			
+.guild     {	text-align:center;
+			color:#ff6666;
+			border-bottom:1px solid #ff6666;
+			font-family:Cursive;
+}
+.leftpart{	
+			padding-top:10px;
+			float:left;
+			width:50%;}
+.rightpart{	float:right;
+			width:50%;}
+h2		{	text-align: center;}
+.downtown{  width:450px; 
+			box-shadow:5px 5px 2px #e1e1d1;
+}
+.Stanley  {	width:450px;
+			box-shadow:5px 5px 2px #e1e1d1;
+}
+.Capilano{	width:450px;
+			box-shadow:5px 5px 2px #e1e1d1;
+}
+.Victoria{	width:450px;
+			box-shadow:5px 5px 2px #e1e1d1;
+}
+.Grouse	  {	width:450px;
+			box-shadow:5px 5px 2px #e1e1d1;
+}
+.Whistler{	
+			width:450px;
+			box-shadow:5px 5px 2px #e1e1d1;
+}

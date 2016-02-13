@@ -1,0 +1,101 @@
+#header{
+	width: 1060px;
+	height: 300px;
+	background: black;
+}
+
+#block{
+	width: 1060px;
+	height: 20px;
+
+}
+
+#wrapper{
+	margin: auto;
+}
+
+#subnav{
+	width: 190px;
+	float: left;
+}
+
+#subnav ul{
+	padding: 10px 5px 0px 5px;
+	list-style: none;
+}
+
+#content{
+	width: 700px;
+	height: 500px;
+	color: white;
+	float: left;
+	border: thin white dashed;
+	margin: 0px 0px 0px 10px;
+}
+
+#comment{
+	width:  148px;
+	height: 500px;
+	background-color: navy;
+	float: right;
+}
+
+body {
+	width: 1060px;
+	margin: auto;
+	background: #858585;
+}
+
+#logo{
+	width: 100px;
+	height: 50px;
+	background: yellow;
+}
+
+#quicknav{
+	width: 200px;
+	height: 25px;
+	background: gray;
+	float: right;
+}
+
+img#SFUBurnaby{
+
+}
+
+h{
+	font-weight: bold;
+	color: white;
+}
+
+p{
+	font-family: Trebuchet MS, Georia, serif;
+}
+
+#footer{
+	clear:both;
+	text-align: center;
+	padding: 20px 0px 0px 0px;
+}
+
+#content h1, h2, p, a{
+	padding: 0px 20px 0px 20px;
+}
+
+a{
+	transition: color ease .35s;
+}
+
+a:link{
+	text-decoration: none;
+	font-family: Trebuchet MS, Georia, serif;
+	color: #554FFD
+}
+
+a:hover{
+	color: red;
+}
+
+a:visited{
+	color:black;
+}

@@ -6,7 +6,7 @@
 	width: 1060px;
 	height: 300px;
     padding: 0px 0px 0px 0px;
-    background-image: url(/images/Langara/Langara-2.jpg);
+    background-image: url(/images/CommentBoard/CampusLife.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -23,21 +23,42 @@
 }
 
 #subnav{
-	width: 88px;
+	width: 138px;
 	float: left;
+    text-align: center;
 }
 
 #subnav ul{
-	padding: 10px 5px 0px 5px;
+	padding: 10px 0px 0px 0px;
 	list-style: none;
 }
 
 #content{
-	width: 798px;
+	width: 748px;
 	height: auto;
 	float: left;
 	border: thin black dashed;
 	margin: 0px 0px 0px 10px;
+}
+
+#BCITComment{
+    border: 2.5px #4E59F6 solid;
+    box-shadow: 5px 5px 2.5px #262FA2;
+}
+
+#UBCComment{
+    border: 2.5px #C44FEB solid;
+    box-shadow: 5px 5px 2.5px #8C39A7;
+}
+
+#SFUComment{
+    border: 2.5px #F35673 solid;
+    box-shadow: 5px 5px 2.5px #AF1834;
+}
+
+#LangaraComment{
+    border: 2.5px #FAC751 solid;
+    box-shadow: 5px 5px 2.5px #816011;
 }
 
 #comment{
@@ -54,6 +75,10 @@ body {
 	width: 1060px;
 	margin: auto;
     line-height:  200%;
+    background-image: url(/images/Vine.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right bottom;
 }
 
 #logo{
@@ -92,6 +117,14 @@ p{
 	padding: 0px 20px 0px 20px;
 }
 
+#content h2{
+    padding-left: 30px; 
+}
+
+#content h3{
+    padding-left: 40px; 
+}
+
 a{
 	transition: color ease .35s;
 }
@@ -108,4 +141,30 @@ a:hover{
 
 a:visited{
 	color: black;
+}
+
+#SchoolFont{
+    padding-left: 50px;
+    font-family: Algerian, Georia, serif;
+    font-size: 50px;
+}
+
+#LivingFont{
+    padding-left: 20px;
+    font-family: Bradley Hand ITC, Georia, serif;
+    font-size: 50px;
+}
+
+#EntertainmentComment{
+    border: 2.5px #A7B1B5 solid;
+    box-shadow: 5px 5px 2.5px black;
+}
+
+#SightViewingComment{
+    border: 2.5px #58F053 solid;
+    box-shadow: 5px 5px 2.5px #34A930;
+}
+
+.NavLine{
+    width: 100%;
 }

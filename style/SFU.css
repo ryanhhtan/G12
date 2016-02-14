@@ -1,21 +1,29 @@
-#header{
+#top{
+    height: 100px;
+}
+
+#topdiv{
 	width: 1060px;
 	height: 300px;
-	background: black;
+    padding: 0px 0px 0px 0px;
+    background-image: url(/images/SFU/SFUBurnaby.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 #block{
 	width: 1060px;
 	height: 20px;
-
 }
 
 #wrapper{
 	margin: auto;
+    border: thin black solid;
 }
 
 #subnav{
-	width: 190px;
+	width: 88px;
 	float: left;
 }
 
@@ -25,52 +33,60 @@
 }
 
 #content{
-	width: 700px;
-	height: 500px;
-	color: white;
+	width: 798px;
+	height: auto;
 	float: left;
-	border: thin white dashed;
+	border: thin black dashed;
 	margin: 0px 0px 0px 10px;
 }
 
 #comment{
 	width:  148px;
-	height: 500px;
-	background-color: navy;
+	height: auto;
 	float: right;
+}
+
+#comment ul{
+    list-style: none;
 }
 
 body {
 	width: 1060px;
 	margin: auto;
-	background: #858585;
+    line-height:  200%;
 }
 
 #logo{
-	width: 100px;
-	height: 50px;
-	background: yellow;
+    width: 100px;
+    float: left;
 }
 
 #quicknav{
-	width: 200px;
+	width: auto;
 	height: 25px;
-	background: gray;
 	float: right;
+    padding-top: 20px;
+}
+
+#quicknav ul{
+    list-style: none;
+}
+
+#quicknav ul li {
+    display: inline;
+    font-size: 1.5em;
 }
 
 img#SFUBurnaby{
 
 }
 
-h{
-	font-weight: bold;
-	color: white;
-}
-
 p{
 	font-family: Trebuchet MS, Georia, serif;
+    text-indent: 50px;
 }
+
+
 
 #footer{
 	clear:both;
@@ -82,6 +98,10 @@ p{
 	padding: 0px 20px 0px 20px;
 }
 
+#SFULink{
+
+}
+
 a{
 	transition: color ease .35s;
 }
@@ -89,7 +109,7 @@ a{
 a:link{
 	text-decoration: none;
 	font-family: Trebuchet MS, Georia, serif;
-	color: #554FFD
+	color: #554FFD;
 }
 
 a:hover{
@@ -97,5 +117,5 @@ a:hover{
 }
 
 a:visited{
-	color:black;
+	color: black;
 }

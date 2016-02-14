@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Servival Guide for International Students </title>
-		<link href="style/base.css" rel="stylesheet" type="text/css">
+		<link href="../../style/base.css" rel="stylesheet" type="text/css">
 	</head>
 	<!--content-->
 	<body>
@@ -12,7 +12,7 @@
 		<div id="header">
 			<!--logo-->
 			<div id="logo">
-			<img src="images/logo.png" title="logo" alt="Logo" style="width: 100px; height: 100px">
+			<img src="../../images/logo.png" title="logo" alt="Logo" style="width: 100px; height: 100px">
 			</div>
 			<!--navigation bar, fixed at the top-->
 			<div id="navigation">
@@ -57,22 +57,31 @@
 		
 		<!--conten-->
 		<div id="content">
-			<div id="slogan"><p>Our Slogan</p></div>
-			<div id="galleriesarea">
-				<div id="studygallery" class="galleries">
-					<a href=# title="Study information section">
-						<img id="schoolPhotos" title="schools" src="images/BCIT/bcit.jpg" alt="study information picture">
-					</a>
+			<div id="contactpage">
+				<div class="contactus">
+				<p>Have any suggestion? Tell us to improve our website! The message you write and the information you offer will be kept private.</p>
+				<p>If you want to post in public, please go to <a href="comment.html">Comment Section</a>.</p>
 				</div>
-				<div id="livinggallery" class="galleries">
-					<a href=# title="Living information section">
-						<img id="livingPhotos" title="living info" src="images/Entertainment/entertainment.jpg" alt="living information picture">
-					</a>
+				<div class="contactus">
+					<form>
+						<label for="name">Your Name</labe><br>
+						<input type="text" id="name" class="textfield"><br>				
+						<label for="reply">Your email</labe><br>
+						<input type="text" id="reply" class="textfield">
+						<input type="checkbox" id="anonymous" > 
+						<label for="anonymous">Keep me anonymous</label><br>
+						<label for="suggestion">Your suggestion</label><br>
+						<textarea id="suggestion" rows="10" cols="50"></textarea><br>
+						<input type="submit" value="submit">
+					</form>
 				</div>
 			</div>
+
+			
 		</div>
 
-		<script src="scripts/nav.js"></script>
+		<script src="../../scripts/nav.js"></script>
+		
 		<footer>
 		</footer>	
 	</body>

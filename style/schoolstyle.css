@@ -1,0 +1,87 @@
+        nav {      
+            padding-right:20px;
+            padding-top:40px;
+        }
+        ul  {   
+            list-style-type: none;
+        }
+
+        li  {   
+            display: inline;
+                    
+        }
+        li a   {   
+            text-decoration: none;
+            padding: 10px;
+            font-size:20px;
+            font-weight:bold;           
+        }
+        li a:link {
+            color:white;
+        }
+        li a:hover {
+            color: #99ff99;
+        }
+        li a:visited {
+            color: #66c2ff;
+        }
+        .navigation{
+            float: right;
+        }
+        .logo{
+
+            margin-left: 0 auto;
+        }
+        .container{
+            width: 1000px;
+            margin:0 auto;
+
+        }
+        .bcit{
+            float: left;
+            padding: 30px;
+            padding-bottom: 100px
+        }
+        .ubc{
+            float: left;
+            padding: 30px;
+            padding-bottom: 100px
+        }
+        .langara{
+            float: left;
+            padding: 30px
+        }
+        .sfu{
+            float: left;
+            padding: 30px
+        }
+
+        .welcome{
+            text-align: center;
+            padding-top: 20px
+        }
+        footer{
+            clear:both;
+            color: white;
+            background-color: black;
+            height: 50px; 
+            padding-top: 10px;
+            text-align: center; 
+        }
+        body{
+            background-color: white;
+        }
+        h1{
+            color: black
+        }
+        .schools{
+            height: auto;
+        }
+        .header-nav{
+            background-color: black;
+        }
+        span{
+            position: relative;
+            top:50px;
+            left:50px;
+        }

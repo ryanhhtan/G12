@@ -95,14 +95,10 @@ li:hover {
 	font-size: 30px;
 	color: orange;
 	text-align: center;
-	background-color: green;
 }
 
 #slogan p {
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	border: 1px solid black;
+	text-align: center;
 }
 
 

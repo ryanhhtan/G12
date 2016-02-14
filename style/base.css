@@ -17,7 +17,7 @@ body {
 }
 #navigation {
 
-	width: 50%;
+	width: 60%;
 	float: right;
 }
 
@@ -29,7 +29,7 @@ body {
 
 #navigation ul , #navigation li{
 	list-style: none;
-	margin: 0px;
+	margin: 5px;
 	padding: 0px;
 }
 
@@ -38,7 +38,7 @@ body {
 }
 
 #mainmenu li {
-	width: 18.5%;
+	width: 15%;
 	font-size: 20px;
 	display: inline-block;
 	margin:0px;
@@ -52,7 +52,7 @@ body {
 }
 
 #menuitemarea li {
-	width: 30%;
+	width: 20%;
 }
 .menuitems {
 	width: 100%;
@@ -62,12 +62,16 @@ body {
 	visibility: hidden;
 }
 
+#studyinfo {
+	padding-left: 15%;
+}
+
 #livinginfo {
-	padding-left: 18.5%;
+	padding-left: 30%;
 }
 
 #interaction {
-	padding-left: 38%;	
+	padding-left: 45%;	
 }
 
 li:hover {
@@ -91,7 +95,16 @@ li:hover {
 	font-size: 30px;
 	color: orange;
 	text-align: center;
+	background-color: green;
 }
+
+#slogan p {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: 1px solid black;
+}
+
 
 #galleriesarea {
 	position: relative;

@@ -1,5 +1,5 @@
-document.getElementById("studyinformenu").onmouseover = function(){showStudentInfo()};
-document.getElementById("livinginformenu").onmouseover = function(){showLivingInfo()};
+document.getElementById("studyinfomenu").onmouseover = function(){showStudentInfo()};
+document.getElementById("livinginfomenu").onmouseover = function(){showLivingInfo()};
 document.getElementById("interactingmenu").onmouseover = function(){showInteractingInfo()};
 document.getElementById("studyinfo").addEventListener('mouseout',hideStudentInfo,true);
 document.getElementById("livinginfo").onmouseout = function(){hideLivingInfo()};

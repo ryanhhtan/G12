@@ -42,6 +42,7 @@ body {
 	font-size: 20px;
 	display: inline-block;
 	margin:0px;
+	overflow: hidden;
 
 }
 
@@ -74,7 +75,7 @@ li:hover {
 }
 
 #content {
-	width: 800px;
+	width: 80%;
 	margin: auto;
 
 }
@@ -98,13 +99,13 @@ li:hover {
 
 #studygallery {
 	position: absolute;
-	left: 50px;
+	left: 20%;
 	top: 0;
 }
 
 #livinggallery{
 	position: absolute;
-	left: 450px;
+	left: 55%;
 	top: 0;
 }
 

@@ -77,16 +77,10 @@ body {
     font-size: 1.5em;
 }
 
-img#SFUBurnaby{
-
-}
-
 p{
 	font-family: Trebuchet MS, Georia, serif;
     text-indent: 50px;
 }
-
-
 
 #footer{
 	clear:both;
@@ -96,10 +90,6 @@ p{
 
 #content h1, h2, p, a{
 	padding: 0px 20px 0px 20px;
-}
-
-#SFULink{
-
 }
 
 a{

@@ -1,0 +1,31 @@
+#commentpage {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: auto;
+    float: left;
+}
+
+#commentlist {
+    position: absolute;
+    width: 40%;
+    left: 0;
+    top: 0;
+    height: 400px;   
+}
+
+#commentdetails {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 350px;
+    border: 1px solid red;
+    background-color: #f8eba3;
+}
+
+#response {
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
+}

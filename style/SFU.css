@@ -13,13 +13,13 @@
 }
 
 #block{
-	width: 1060px;
+	width: auto;
 	height: 20px;
 }
 
 #wrapper{
 	margin: auto;
-    border: thin black solid;
+    width: 1060px;
 }
 
 #subnav{
@@ -51,7 +51,7 @@
 }
 
 body {
-	width: 1060px;
+	width: auto;
 	margin: auto;
     line-height:  200%;
 }

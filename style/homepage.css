@@ -1,6 +1,7 @@
 #content {
 	width: 80%;
 	margin: auto;
+    position: relative;
 
 }
 
@@ -25,6 +26,8 @@
 
 #galleriesarea {
 	position: relative;
+    height: 350px;
+    
 }
 
 #studygallery {

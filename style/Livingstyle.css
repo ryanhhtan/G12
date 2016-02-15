@@ -1,0 +1,149 @@
+body		{background-color:white;
+		 clear:left;
+}
+.webName{	
+			
+			top:0;
+			height: 100px;
+			margin:0;
+		
+}
+.h1		{	font-weight:bold;
+			color: #990099;
+			float:left;			
+}
+nav		{	float:right;	
+			padding-right:20px;
+			padding-top:20px;
+}
+nav ul	{	list-style-type: none;}
+
+nav li 	{	display: inline;
+			
+}
+nav a 	{	text-decoration: none;
+			padding: 10px;
+			font-size:20px;
+			font-weight:bold;			
+}
+nav a:link {color:#000000;}
+nav a:hover {color: #99ff99;
+}
+nav a:visited {color: #66c2ff;
+}
+.main	{	
+			background-color:white;
+			clear:left;
+
+}
+.header  {	text-align: center;
+			background-image: url("../images/vancouver-1.jpg");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			height:250px;
+			font-size: 35px;
+			padding-top:60px;
+			color: rgba(255, 255,255,0.7);
+			letter-spacing:0.5em;
+			
+}
+.content {	width:950px;
+			margin:auto;
+}			
+			
+.leftF	 {	padding-top:10px;
+			float:left;
+
+}
+.rightF	 {padding-top:10px;
+			float:right;
+			}
+.P1		 {text-align: center;
+			background-image: url("../images/Part1.jpg") ;
+			background-repeat: no-repeat;
+			background-size: 100%;
+			height:200px;
+			width:270px;
+			padding-top:40px;
+			color: rgba(000, 000,000,0.7);
+			letter-spacing:;
+			margin-left:100px;
+			margin-top: 120px;
+}
+.P2		 {text-align: center;
+			background-image: url("../images/p2.jpg") ;
+			background-repeat: no-repeat;
+			background-size: 100%;
+			height:200px;
+			width:270px;
+			padding-top:40px;
+			color: rgba(000, 000,000,0.7);
+			letter-spacing:;
+			margin-left:100px;
+			margin-top: 50px;
+			
+}
+.P3		 {text-align: center;
+			background-image: url("../images/p3.jpg") ;
+			background-repeat: no-repeat;
+			background-size: 100%;
+			height:200px;
+			width:270px;
+			padding-top:40px;
+			color: rgba(000, 000,000,0.7);
+			letter-spacing:;
+			margin-right:100px;
+			margin-top: 120px;
+}
+.P4		 {text-align: center;
+			background-image: url("../images/p4.jpg") ;
+			background-repeat: no-repeat;
+			background-size: 100%;
+			height:200px;
+			width:270px;
+			padding-top:40px;
+			color: rgba(000, 000,000,0.7);
+			letter-spacing:;
+			margin-right:100px;
+			margin-top: 50px;
+}
+h3		{font-size: 40px;}
+div a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+div a:visited {
+    color: #00ccff;
+    background-color: transparent;
+    text-decoration: none;
+}
+div a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+div a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.footer{
+	background-color:#EFE6CE;
+	padding-top:25px;
+	padding-bottom:25px;
+	clear:both;
+}
+
+.footer-inner{
+	width:760px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.footer-div{
+	width:150px;
+	float:left;
+	margin-right:20px;
+	margin-left:20px;
+}

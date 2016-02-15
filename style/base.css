@@ -82,3 +82,17 @@
     background-color: #66B2E5;
     color: white;
 }
+
+#footer {
+    position: relative;
+    width: 100%;
+    font-size: small;
+    clear: both;
+    background-color: #EFE6CE;
+}
+
+#footercontentarea {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}

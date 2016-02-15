@@ -3,7 +3,7 @@
 }
 
 #topdiv{
-	width: 1060px;
+
 	height: 300px;
     padding: 0px 0px 0px 0px;
     background-image: url(../images/CommentBoard/CampusLife.jpg);
@@ -21,6 +21,7 @@
 	margin: auto;
     border: thin black solid;
     line-height:  200%;
+    width: 1060px;
 }
 
 #subnav{
@@ -73,7 +74,7 @@
 }
 
 body {
-	width: 1060px;
+	width: auto;
 	margin: auto;
  
     background-image: url(/images/Vine.jpg);

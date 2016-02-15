@@ -36,7 +36,7 @@ nav a:visited {color: #66c2ff;
 			clear:left;
 
 }
-.header  {	text-align: center;
+.EYL  {	text-align: center;
 			background-image: url("../images/vancouver-1.jpg");
 			background-repeat: no-repeat;
 			background-size: 100%;
@@ -55,7 +55,12 @@ nav a:visited {color: #66c2ff;
 div ul 	{	list-style-type: none;
 			
 }
-div li 	{	display: inline;
+
+.guild li{
+    display: inline;
+}
+
+div li {
 			
 			padding-right: 80px;
 			font-size:20px;

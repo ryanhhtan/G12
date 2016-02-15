@@ -1,0 +1,35 @@
+#content{
+    margin: auto;
+}
+
+#content h1{
+    font-family: 'Segoe UI Emoji';
+    font-size: xx-large;
+    color: #ff00dc;
+}
+
+#picture{
+    float: left;
+}
+
+#content p ul{
+    float: right;
+    padding: 10px;
+}
+
+#immigration{
+    font-family: Arial;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#more{
+    font-family: Arial;
+    font-size: x-large;
+}
+
+.hyperlinks{
+    list-style: none;
+	padding-top: 5px;
+	padding-left: 30px;
+}

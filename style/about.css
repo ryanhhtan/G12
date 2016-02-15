@@ -1,0 +1,38 @@
+body{
+    background-color:white;
+}
+#aboutus{
+    font-size: larger;
+    color: #ff006e;
+    margin: auto;
+    text-align:center;
+    border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #ff006e;
+    
+}
+#content h2{
+    margin: auto;
+    text-align:center;
+}
+#content p{
+    margin: auto;
+    text-align:center;
+    width: 60%;
+}
+#teammembers{
+    margin: auto;
+    text-align:center;  
+    list-style:none;
+	padding-top: 5px;
+	padding-left: 10px;
+        
+}
+#teammembers{
+    font-weight: bold;
+}
+#teammembers li{
+	text-decoration: none;
+	color: black;
+    list-style-position:inside;
+}

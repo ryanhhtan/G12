@@ -1,0 +1,111 @@
+#top{
+    height: 100px;
+}
+
+#topdiv{
+	width: 1060px;
+	height: 300px;
+    padding: 0px 0px 0px 0px;
+    background-image: url(/images/BCIT/bcitback.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#block{
+	width: 1060px;
+	height: 20px;
+}
+
+#wrapper{
+	margin: auto;
+    width: 1060px;
+}
+
+#subnav{
+	width: 88px;
+	float: left;
+}
+
+#subnav ul{
+	padding: 10px 5px 0px 5px;
+	list-style: none;
+}
+
+#content{
+	width: 798px;
+	height: auto;
+	float: left;
+	border: thin black dashed;
+	margin: 0px 0px 0px 10px;
+}
+
+#comment{
+	width:  148px;
+	height: auto;
+	float: right;
+}
+
+#comment ul{
+    list-style: none;
+}
+
+body {
+	width: auto;
+	margin: auto;
+    line-height:  200%;
+}
+
+#logo{
+    width: 100px;
+    float: left;
+}
+
+#quicknav{
+	width: auto;
+	height: 25px;
+	float: right;
+    padding-top: 20px;
+}
+
+#quicknav ul{
+    list-style: none;
+}
+
+#quicknav ul li {
+    display: inline;
+    font-size: 1.5em;
+}
+
+p{
+	font-family: Trebuchet MS, Georia, serif;
+    text-indent: 50px;
+}
+
+#footer{
+	clear:both;
+	text-align: center;
+	padding: 20px 0px 0px 0px;
+}
+
+#content h1, h2, p, a{
+	padding: 0px 20px 0px 20px;
+}
+
+a{
+	transition: color ease .35s;
+}
+
+a:link{
+	text-decoration: none;
+	font-family: Trebuchet MS, Georia, serif;
+	color: #554FFD;
+}
+
+a:hover{
+	color: red;
+}
+
+a:visited{
+	color: black;
+}

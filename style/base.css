@@ -40,12 +40,10 @@
 	display: inline-block;
 	margin:0px;
 	overflow: hidden;
-
 }
 
 #menuitemarea {
 	position: relative;
-	height: 100px;
 }
 
 #menuitemarea li {
@@ -53,6 +51,7 @@
 }
 .menuitems {
 	width: 100%;
+    height: 200px;
 	position: absolute;
 	top: 0;
 	left: 0;

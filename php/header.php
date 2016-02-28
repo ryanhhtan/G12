@@ -1,17 +1,7 @@
-<!DOCTYPE html>
-
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Servival Guide for International Students </title>
-		<link href="../style/base.css" rel="stylesheet" type="text/css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-		<script src="../scripts/nav_jquery.js"></script>
-	</head>
-
-	<body>
-		<!--header with logo, navigation-->
-		<div id="header">
+<?php
+echo '
+   
+<div id="header">
 			<!--logo-->
 			<div id="logo">
 			<a href="../index.html"><img src="../images/logo.png" title="logo" alt="Logo" style="width: 100px; height: 100px"></a>
@@ -57,7 +47,6 @@
 
 			</div>
 		</div>
-	</body>
-
-
-</html>
+'
+?>
+		

@@ -23,15 +23,15 @@
 				<p>If you want to post in public, please go to <a href="comment.html">Comment Section</a>.</p>
 				</div>
 				<div class="contactus">
-					<form action="http://webdevfoundations.net/scripts/formdemo.asp">
+					<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
 						<label for="name">Your Name</label><br>
-						<input type="text" id="name" class="textfield"><br>				
-						<label for="reply">Your email</label><br>
-						<input type="text" id="reply" class="textfield">
+						<input type="text" id="name" class="textfield" name="name"><br>				
+						<label for="email">Your email</label><br>
+						<input type="text" id="email" class="textfield" name="email">
 						<input type="checkbox" id="anonymous" > 
 						<label for="anonymous">Keep me anonymous</label><br>
 						<label for="suggestion">Your suggestion</label><br>
-						<textarea id="suggestion" rows="10" cols="50"></textarea><br>
+						<textarea id="suggestion" rows="10" cols="50" name="suggestion"></textarea><br>
 						<input type="submit" value="submit">
 					</form>
 				</div>

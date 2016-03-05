@@ -81,4 +81,5 @@ textarea {
     height: 600px;
     background-image: url(../images/bannerhome.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 }

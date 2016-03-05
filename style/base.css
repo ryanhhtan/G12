@@ -42,7 +42,7 @@
 	display: inline-block;
 	margin:0px;
 	overflow: hidden;
-    text-decoration: bold;
+    font-weight: bold;
 }
 
 #menuitemarea {

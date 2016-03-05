@@ -8,6 +8,7 @@
         <link href="../style/homepage.css" rel="stylesheet" type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <script src="../scripts/addheaderfooter_jquery.js"></script>
+        <script src="../scripts/formvalidation.js"></script>
 	</head>
 	<!--content-->
 	<body>
@@ -25,11 +26,11 @@
 				<div class="contactus">
 					<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
 						<label for="name">Your Name</label><br>
-						<input type="text" id="name" class="textfield" name="name"><br>				
+						<input type="text" id="name" class="textfield" name="name">
+                        <input type="checkbox" id="anonymous">
+                        <label for="anonymous">Keep me anonymous</label> <br>				
 						<label for="email">Your email</label><br>
-						<input type="text" id="email" class="textfield" name="email">
-						<input type="checkbox" id="anonymous" > 
-						<label for="anonymous">Keep me anonymous</label><br>
+						<input type="text" id="email" class="textfield" name="email"><br>
 						<label for="suggestion">Your suggestion</label><br>
 						<textarea id="suggestion" rows="10" cols="50" name="suggestion"></textarea><br>
 						<input type="submit" value="submit">
@@ -37,6 +38,7 @@
 				</div>
 			</div>		
 		</div>
+
 		<div id="footer"></div>
 	</body>
 

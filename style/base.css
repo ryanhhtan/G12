@@ -99,3 +99,7 @@
     margin: auto;
     text-align: center;
 }
+
+.nostyle {
+    list-style-type: none;
+}

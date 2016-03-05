@@ -8,7 +8,18 @@ $(document).ready(function () {
         warnInvalidName("#name");
     });
 
+    $("#contactform").on("submit", checkAll);
 
+    $("#anonymous").click(function () {
+        if ($("#anonymous").prop('checked')) {
+            $("#name").val("anonymous");
+            $("#name").prop('disabled', true);
+        } else { 
+            $("#name").val("");
+            $("#name").prop('disabled', false);
+            $("#name").focus();
+        }
+    });
 });
 
 
@@ -51,4 +62,18 @@ function warnInvalidSuggestion(id) {
     if (!testName(id)) {
         alert("Invalid name, please input again or check the \"Keep me anonymous box\".");
     }
+}
+
+function checkAll() {
+    var result = "";
+    if ($("#name").val().length == 0) result += "-Name should not be empty, or choose \"anonymous\" explicite";
+    if ($("#email").val().length == 0) result += "-Email address should be empty.\n";
+    if ($("#email").val().length == 0) result += "-Suggestion should be empty.\n";
+    if (result.length != 0) 
+    {
+        alert("Required information cannot be blank.\n" + result);
+        return false;
+    }
+    return true;
+
 }

@@ -40,12 +40,12 @@
                         } 
                     } 
 
-                $servername = "sql203.byethost9.com";
-                $username = "b9_17390383";
-                $password = "comp1536g12";
+                $servername = "bcitdevcom.ipagemysql.com";
+                $username = "comp153612";
+                $password = "comp[]1536[]12";
 
                 try {
-                    $conn = new PDO("mysql:host=$servername;dbname=b9_17390383_issg", $username, $password);
+                    $conn = new PDO("mysql:host=$servername;dbname=comp153612", $username, $password);
                     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                     $stmt = $conn->prepare("SELECT author, topic, postTime FROM comments"); 
                     $stmt->execute();

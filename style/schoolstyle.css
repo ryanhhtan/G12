@@ -4,21 +4,21 @@
             margin:0 auto;
 
         }
-        .bcit{
+        #bcit{
             float: left;
             padding: 30px;
             padding-bottom: 100px
         }
-        .ubc{
+        #ubc{
             float: left;
             padding: 30px;
             padding-bottom: 100px
         }
-        .langara{
+        #langara{
             float: left;
             padding: 30px
         }
-        .sfu{
+        #sfu{
             float: left;
             padding: 30px
         }
@@ -56,5 +56,7 @@
         .banner{
             background-image: url("../images/banner.jpg");
             background-size: 100%;
-            
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 600px;
         }

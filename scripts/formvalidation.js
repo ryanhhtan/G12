@@ -1,25 +1,37 @@
 /*bind the validation with elements*/
 $(document).ready(function () {
-    $("#email").change(function () {
+    $("#email").blur(function () {
         warnInvalidEmail("#email");
     });
 
-    $("#name").change(function () {
+    $("#name").blur(function () {
         warnInvalidName("#name");
     });
 
-    $("#contactform").on("submit", checkAll);
+    $("#suggestion").blur(function () {
+        warnInvalidSuggestion("#suggestion");
+    });
 
     $("#anonymous").click(function () {
-        if ($("#anonymous").prop('checked')) {
+        if ($("#anonymous").prop("checked")) {
             $("#name").val("anonymous");
-            $("#name").prop('disabled', true);
-        } else { 
+            $("#name").prop("disabled", true);
+            $("#nameAsterisk").css("visibility", "collapse");
+            $("#hintName").css("visibility", "collapse");
+
+        } else {
             $("#name").val("");
-            $("#name").prop('disabled', false);
+            $("#name").prop("disabled", false);
             $("#name").focus();
+            $("#nameAsterisk").css("visibility", "visible");
+            $("#hintName").css("visibility", "visible");
         }
     });
+
+    $(":reset").click(function () {
+        resetAll();
+    });
+    $("#contactform").on("submit", checkAll);
 });
 
 
@@ -27,15 +39,35 @@ $(document).ready(function () {
 //test function
 function testEmail(id) {
     var str = $(id).val();
-    return (/[a-zA-Z0-9]+@[a-zA-Z0-9]+[.](com|net|org|ca)$/i.test(str));
+    if (str.length == 0) {
+        $("#hintEmail").text("Email can not be blank.");
+        return false;
+    } else if (! (/^[a-zA-Z0-9]/.test(str))) {
+        $("#hintEmail").text("Email should begin with letters or number.");
+        return false;
+    } else if (! (/^[a-zA-Z0-9]+@/.test(str))) {
+        $("#hintEmail").text("Email should contain a \"@\" sign.");
+        return false;
+    } else if (! (/[.](com|net|org|ca)$/i.test(str))) {
+        $("#hintEmail").text("Email should end with \".com\",  \".net\",  \".org\" or  \".ca\".");
+        return false;
+    } else {
+        return true;
+    }
+    //return (/[a-zA-Z0-9]+@[a-zA-Z0-9]+[.](com|net|org|ca)$/i.test(str));
 }
 
 function warnInvalidEmail(id) {
     if (!testEmail(id)) {
-        alert("Invalid email address, please input again.\n"
-        + "-Must contain \"@\"\n"
-        + "-Must end with \".com\", \".net\", \".org\" or \".ca\"");
+        $("#emailAsterisk").css("visibility", "visible");
+        $("#hintEmail").css("visibility", "visible");
+        return true;
+    } else { 
+        $("#emailAsterisk").css("visibility","collapse");
+        $("#hintEmail").css("visibility","collapse");
+        return false;
     }
+
 }
 
 /*name validation*/
@@ -47,8 +79,16 @@ function testName(id) {
 //warn function
 function warnInvalidName(id) {
     if (!testName(id)) {
-        alert("Invalid name, please input again or check the \"Keep me anonymous box\".");
+        //alert("Invalid name, please input again or check the \"Keep me anonymous box\".");
+        $("#nameAsterisk").css("visibility", "visible");
+        $("#hintName").css("visibility", "visible");
+        return true;
+    } else { 
+    $("#nameAsterisk").css("visibility","collapse");
+    $("#hintName").css("visibility","collapse");
+    return false;
     }
+
 }
 
 /*suggestion validation*/
@@ -59,21 +99,44 @@ function testSuggestion(id) {
 
 //warn function
 function warnInvalidSuggestion(id) {
-    if (!testName(id)) {
-        alert("Invalid name, please input again or check the \"Keep me anonymous box\".");
+    if (!testSuggestion(id)) {
+        //alert("Invalid name, please input again or check the \"Keep me anonymous box\".");
+        $("#suggestionAsterisk").css("visibility", "visible");
+        $("#hintSuggestion").css("visibility", "visible");
+        return true;
+    } else { 
+        $("#suggestionAsterisk").css("visibility","collapse");
+        $("#hintSuggestion").css("visibility","collapse");
+        return false;
     }
 }
 
 function checkAll() {
-    var result = "";
-    if ($("#name").val().length == 0) result += "-Name should not be empty, or choose \"anonymous\" explicite\n";
-    if ($("#email").val().length == 0) result += "-Email address should be empty\n";
-    if ($("#email").val().length == 0) result += "-Suggestion should be empty\n";
-    if (result.length != 0) 
-    {
-        alert("Required information cannot be blank.\n" + result);
-        return false;
-    }
-    return true;
+    var formComplete = true;
 
+    if (warnInvalidName($("#name"))) 
+        formComplete = false;
+
+    if (warnInvalidEmail($("#email"))) 
+        formComplete = false;
+
+    if (warnInvalidSuggestion($("#suggestion"))) 
+        formComplete = false;
+
+    if (formComplete) {
+        $("#name").prop("disabled", false);
+        $("#anonymous").prop("checked", false);
+         }
+
+    return formComplete;
+}
+
+function resetAll(){
+    $("#name").val("");
+    $("#email").val("");
+    $("#suggestion").val("");
+    $("#name").prop("disabled", false);
+    $("#hintName").css("visibility", "collapse");
+    $("#hintEmail").css("visibility", "collapse");
+    $("#hintSuggestion").css("visibility", "collapse");
 }

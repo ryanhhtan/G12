@@ -50,7 +50,7 @@ input {
 }
 
 label {
-
+    display: inline-block;
 	margin-top: 5px;
 	margin-bottom: 5px;
 	font-size: 20px;
@@ -65,13 +65,29 @@ textarea {
 }
 
 .contactus {
-
 	margin: 10px;
 	background-color: white;
 	color: green;
 	padding: 5px;
     width: 60%;
 }
+
+.asterisk {
+    color:  red;
+}
+
+.hintinfo {
+    color: red;
+    font-size: small;
+    font-style: italic;
+    visibility: collapse;
+}
+
+.formcaptions {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
 
 #contactpage {
 	width: 100%;

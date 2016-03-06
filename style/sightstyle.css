@@ -34,10 +34,10 @@ body		{background-color:white;
 			
 			
 }
-div ul 	{	list-style-type: none;
+.main ul 	{	list-style-type: none;
 			
 }
-div li 	{	display: inline;
+.main li 	{	display: inline;
 			
 			padding-right: 80px;
 			font-size:20px;

@@ -8,7 +8,6 @@
 .galleries {
 	width: 300px;
 	height: 300px;
-	border: 1px solid yellow;
 }
 
 #slogan {
@@ -51,4 +50,9 @@
     background-image: url(../images/bannerhome.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.galleries a {
+    text-decoration: none;
+    font-size: larger;
 }

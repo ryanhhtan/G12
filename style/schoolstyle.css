@@ -4,21 +4,21 @@
             margin:0 auto;
 
         }
-        .bcit{
+        #bcit{
             float: left;
             padding: 30px;
             padding-bottom: 100px
         }
-        .ubc{
+        #ubc{
             float: left;
             padding: 30px;
             padding-bottom: 100px
         }
-        .langara{
+        #langara{
             float: left;
             padding: 30px
         }
-        .sfu{
+        #sfu{
             float: left;
             padding: 30px
         }
@@ -54,10 +54,18 @@
             left:50px;
         }
         .banner{
+<<<<<<< HEAD
             background-image: url("../images/banner.jpg");%;
             width: 100%;
             height: 400px;
             background-repeat: no-repeat;
             background-size: cover;
             
+=======
+            background-image: url("../images/banner.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 600px;
+>>>>>>> 036106a168e4e622b7f7f1e8bd54847e9ebfa5db
         }

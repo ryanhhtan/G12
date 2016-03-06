@@ -55,5 +55,6 @@
         }
         .banner{
             background-image: url("../images/banner.jpg");
-            width:100%;
+            background-size: 100%;
+            
         }

@@ -66,9 +66,9 @@ function warnInvalidSuggestion(id) {
 
 function checkAll() {
     var result = "";
-    if ($("#name").val().length == 0) result += "-Name should not be empty, or choose \"anonymous\" explicite";
-    if ($("#email").val().length == 0) result += "-Email address should be empty.\n";
-    if ($("#email").val().length == 0) result += "-Suggestion should be empty.\n";
+    if ($("#name").val().length == 0) result += "-Name should not be empty, or choose \"anonymous\" explicite\n";
+    if ($("#email").val().length == 0) result += "-Email address should be empty\n";
+    if ($("#email").val().length == 0) result += "-Suggestion should be empty\n";
     if (result.length != 0) 
     {
         alert("Required information cannot be blank.\n" + result);

@@ -50,6 +50,7 @@ input {
 }
 
 label {
+
 	margin-top: 5px;
 	margin-bottom: 5px;
 	font-size: 20px;
@@ -64,10 +65,12 @@ textarea {
 }
 
 .contactus {
+
 	margin: 10px;
-	background-color: #0E4D0B;
-	color: #F4EAF7;
+	background-color: white;
+	color: green;
 	padding: 5px;
+    width: 60%;
 }
 
 #contactpage {
@@ -81,4 +84,5 @@ textarea {
     height: 600px;
     background-image: url(../images/bannerhome.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 }

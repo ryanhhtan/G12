@@ -11,6 +11,11 @@ body{
 	border-bottom-color: #ff006e;
     
 }
+
+#picture img{
+    width: 100%;
+}
+
 #content h2{
     margin: auto;
     text-align:center;

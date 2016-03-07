@@ -1,5 +1,6 @@
 /*bind the validation with elements*/
 $(document).ready(function () {
+    resetAll();
     $("#email").blur(function () {
         warnInvalidEmail("#email");
     });

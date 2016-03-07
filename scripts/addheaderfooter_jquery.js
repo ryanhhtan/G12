@@ -51,13 +51,19 @@ function loadHeader() {
 function loadFooter() {
     xhttpFooter.onreadystatechange = function () {
         var loadedContent = "";
+        var htmlValidatorURL;
         if (xhttpFooter.readyState == 4 && xhttpFooter.status == 200) {
             loadedContent = xhttpFooter.responseText;
             if (loadedContent.length == 0) {
                 loadedContent = "<p>Network error occured, please reload the page.</p>";
             } else if (baseDir == "") {
                 loadedContent = loadedContent.replace(/[.]{2}\//g, "");
+                htmlValidatorURL = "https://validator.w3.org/nu/?doc=http%3A%2F%2Fstudents.bcitdev.com%2FA00950721%2FG12%2F" + fileName;
+            } else { 
+                htmlValidatorURL = "https://validator.w3.org/nu/?doc=http%3A%2F%2Fstudents.bcitdev.com%2FA00950721%2FG12%2Fhtml%2F" + fileName;
             }
+            
+            loadedContent = loadedContent.replace("https://validator.w3.org", htmlValidatorURL);
             $("#footer").empty();
             $("#footer").append(loadedContent);
         }

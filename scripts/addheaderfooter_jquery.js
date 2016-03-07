@@ -61,11 +61,16 @@ function loadFooter() {
                 loadedContent = loadedContent.replace(/[.]{2}\//g, "");
                 htmlValidatorURL = "https://validator.w3.org/nu/?doc=http%3A%2F%2Fstudents.bcitdev.com%2FA00950721%2FG12%2F" + fileName;
             } else {
-                htmlValidatorURL = "https://validator.w3.org/nu/?doc=http%3A%2F%2Fstudents.bcitdev.com%2FA00950721%2FG12%2Fhtml%2F" + fileName;
+                if (fileName.substring(fileName.length - 3) == "php") {
+                    htmlValidatorURL = "https://validator.w3.org/nu/?doc=http%3A%2F%2Fstudents.bcitdev.com%2FA00950721%2FG12%2Fphp%2F" + fileName;
+                } else {
+                    htmlValidatorURL = "https://validator.w3.org/nu/?doc=http%3A%2F%2Fstudents.bcitdev.com%2FA00950721%2FG12%2Fhtml%2F" + fileName;
+                     }
+                
             }
             cssValidatorURL = "https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fstudents.bcitdev.com%2FA00950721%2FG12%2Fstyle%2Fbase.css&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en";
             loadedContent = loadedContent.replace("https://validator.w3.org", htmlValidatorURL);
-            loadedContent = loadedContent.replace("https://jigsaw.w3.org/css-validator/",cssValidatorURL);
+            loadedContent = loadedContent.replace("https://jigsaw.w3.org/css-validator/", cssValidatorURL);
             $("#footer").empty();
             $("#footer").append(loadedContent);
         }

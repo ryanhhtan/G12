@@ -174,12 +174,13 @@
                     //Login successfully
                     session_regenerate_id();
                     $_SESSION['SESS_USER_NAME'] = $userName;
-                    header('location:' .HOMEURL);
                     session_write_close();
+                    return TRUE;
                 } else {
                     //Login failed
                     $GLOBALS['hintUserName'] = "*Invalid user name or password. Try again.";
                     $GLOBALS['loginPaneVisibility'] = 'visible';
+                    return FALSE;
                 }
                
             } catch (PDOException $e){

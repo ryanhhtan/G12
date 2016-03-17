@@ -16,7 +16,9 @@
         $password = sanitizeInput($_POST['password']);
 
         if (validateLoginParam($userName, $password)){
-            login($userName, $password);
+            if (login($userName, $password)){
+             header('location:' . HOMEURL);   
+            }
         }
     }
 

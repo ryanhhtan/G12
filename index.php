@@ -17,6 +17,9 @@
 
         if (validateLoginParam($userName, $password)){
             login($userName, $password);
+            
+        } else {
+            $loginPaneVisibility = "visible";
         }
     }
 

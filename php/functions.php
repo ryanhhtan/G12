@@ -166,7 +166,7 @@
                 $conn = new PDO("mysql:host=" . DB_HOST .";dbname=" . DB_DATABASE, DB_USER, DB_PASSWORD);
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                 
-                $sql = "SELECT * FROM account WHERE userName='" .$userName ."' AND passwd='" .$password ."'";
+                $sql = "SELECT userName, passwd FROM account WHERE userName='" .$userName ."' AND passwd='" .$password ."'";
                 $stmt = $conn->query($sql);
                 $stmt->setFetchMode(PDO::FETCH_ASSOC);
                 $result = $stmt->fetch();
@@ -174,13 +174,13 @@
                 if($userName == $result['userName'] && $password == $result['passwd']) {
                     //Login successfully
                     session_regenerate_id();
-                    $GLOBALS['formPaneID'] = "maskPane";
                     $_SESSION['SESS_USER_NAME'] = $userName;
                     header('location:' .HOMEURL);
                     session_write_close();
                 } else {
                     //Login failed
                     $GLOBALS['hintUserName'] = "*Invalid user name or password. Try again.";
+                    $GLOBALS['loginPaneVisibility'] = 'visible';
                 }
                
             } catch (PDOException $e){

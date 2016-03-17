@@ -21,7 +21,7 @@ function regulatePath() {
     currentPath = location.pathname;
     lastSlash = currentPath.lastIndexOf("/");
     fileName = currentPath.substring(lastSlash + 1, currentPath.length);
-    if (fileName == "index.html" || fileName == "") {
+    if (fileName == "index.php" || fileName == "") {
         baseDir = "";
     } else {
         baseDir = "../";

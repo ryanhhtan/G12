@@ -139,7 +139,6 @@
               echo 'No such topic, please refresh the topics and choose one to reply.';  
             } else {
                 $userName = $_SESSION['SESS_USER_NAME'];
-                echo $userName;
                 $sql = "SELECT id FROM account WHERE userName='" . $userName ."'";
                 $stmt = $conn->query($sql);
                 if ($stmt->rowCount() == 0) {

@@ -121,7 +121,9 @@ function loadRegisterForm() {?>
         ?>      
     </table>
     <br>
+    <div class="controlBar">
     <button id="btnNewPost">Add a new topic</button>
+    </div>
  <?php }
 ?>
 

@@ -76,7 +76,7 @@
                 $validInput = FALSE;  
                 }
 
-                $sql = "SELECT COUNT(*) FROM account WHERE email='" .$email ."'";
+                $sql = "SELECT email FROM account WHERE email='" .$email ."'";
                 $stmt = $conn->query($sql);
                 if($stmt->rowCount() >0){
                     $GLOBALS['hintEmail'] = "*Email already exist. Please login with your user name.";

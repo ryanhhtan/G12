@@ -217,18 +217,9 @@ form .hintInfo {
     margin: auto;
 }
 
-.topic {
-    width: 100%;
-    font-weight: bold;
-    font-size: 30px;
-    background-color: #c0b9b9;
-}
-
-.postContent {
-    min-height:100px;
-    border: 1px solid yellow;
-    background-color: white;
-    color: blue;
+.controlBar {
+    width: 90%;
+    margin: auto;
 }
 
 #topicTable tr, #topicTable th, #topicTable td{
@@ -263,4 +254,18 @@ form .hintInfo {
 
 table a {
     text-decoration: none;
+}
+
+.topic {
+    width: 100%;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: #c0b9b9;
+}
+
+.postContent {
+    min-height:100px;
+    border: 1px solid yellow;
+    background-color: white;
+    color: blue;
 }

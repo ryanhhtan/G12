@@ -1,3 +1,60 @@
+<?php
+    //Start session
+    session_start();
+
+    //Include database configure
+    require_once("config.php");
+    require_once("components.php");
+    require_once("functions.php");
+
+    if($_SERVER["REQUEST_METHOD"] == "POST"){
+         $action= ($_POST['action']);
+        switch ($action) {
+            case 'login':
+                $userName = sanitizeInput($_POST['userName']);
+                $password = sanitizeInput($_POST['password']);
+
+                if (validateLoginParam($userName, $password)){
+                     login($userName, $password);
+                } else {
+                    $loginPaneVisibility = "visible";
+                }
+ 
+            break;
+
+            case 'postNew':
+                $topic = sanitizeInput($_POST['topic']);
+                $comment = sanitizeInput($_POST['comment']);
+
+                if (validatePostNewParam($topic, $comment) && isLogedIn()) {
+                    dbAddTopic($_SESSION['SESS_USER_NAME'], $topic, $comment);
+                } else {
+                    $postNewVisibility = "visible";
+                }
+
+            break;
+
+            case 'replyPost':
+                $currentPostId = sanitizeInput($_POST['postId']);
+                $comment = sanitizeInput($_POST['comment']);
+                if($comment != "") {
+                    dbAddReply($currentPostId, $comment);
+                } else {
+                    $hintComment = "*Comment cannot be empty.";
+                    $replyPostVisibility = "visible";
+                }
+            break;
+
+            default:
+            break;
+        }
+    }
+
+    if ($_SERVER["REQUEST_METHOD"] == "GET") {
+        $currentPostId = sanitizeInput($_GET['postId']);
+    }
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -9,6 +66,7 @@
         <link href="../style/comment.css" rel="stylesheet" type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <script src="../scripts/addheaderfooter_jquery.js"></script>
+        <script src="../scripts/popupForms.js"></script>
 	</head>
 	<!--content-->
 	<body>
@@ -17,61 +75,31 @@
 		
 		<!--conten-->
 		<div id="content">
-			<div id="commentpage">
-                <div id="commentlist">
-                <?php                
-                echo "<table>";
-                echo "<tr><th>Author</th><th>Topic</th><th>Posted Time</th></tr>";
-                class TableRows extends RecursiveIteratorIterator { 
-                        function __construct($it) { 
-                            parent::__construct($it, self::LEAVES_ONLY); 
-                        }
-
-                        function current() {
-                            return "<td>" . parent::current(). "</td>";
-                        }
-
-                        function beginChildren() { 
-                            echo "<tr>"; 
-                        } 
-
-                        function endChildren() { 
-                            echo "</tr>" . "\n";
-                        } 
-                    } 
-
-                $servername = "bcitdevcom.ipagemysql.com";
-                $username = "comp153612";
-                $password = "comp[]1536[]12";
-
-                try {
-                    $conn = new PDO("mysql:host=$servername;dbname=comp153612", $username, $password);
-                    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                    $stmt = $conn->prepare("SELECT author, topic, postTime FROM comments"); 
-                    $stmt->execute();
-                     // set the resulting array to associative
-                    $result = $stmt->setFetchMode(PDO::FETCH_ASSOC); 
-                    foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v) { 
-                        echo $v;
+            <div id="popup">
+                <?php
+                    if (isLogedIn()) {
+                        loadNewPostPane($postNewVisibility);
+                        loadReplyPostPane($replyPostVisibility);
+                    } else {
+                      loadLoginForm($mask, $loginPaneVisibility);  
                     }
-                }
-                catch(PDOException $e) {
-                    echo "Error: " . $e->getMessage();
-                }
-                $conn = null;
-                echo "</table>";
-
+                    
+                    
                 ?>
-                    <div id="response">
-                        <button>Add a new comment</button>
-                        </div>
+            </div>
+            <div id="posts">
+                <div id="topics">
+                    <?php
+                     loadTopicTable();   
+                    ?>
+                    </div>
+                <div id="postDetails">
+                    <?php
+                        loadPostDetails($currentPostId);
+                    ?>
+                     </div>
                 </div>
-                <div id="commentdetails">
-                    <p>This is the demo of the content of the comment. but the function still needs to add later.</p>
-                </div>
-
-
-			</div>			
+	
 		</div>
 
 		

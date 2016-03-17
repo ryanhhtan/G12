@@ -28,23 +28,27 @@ function regulatePath() {
     }
 }
 
-function loadHeader() { 
+function loadHeader() {
 
     xhttpHeader.onreadystatechange = function () {
-        var loadedContent="";
+        var loadedContent = "";
         if (xhttpHeader.readyState == 4 && xhttpHeader.status == 200) {
             loadedContent = xhttpHeader.responseText;
-        if (loadedContent.length == 0) {
-            loadedContent = "<p>Network error occured, please reload the page.</p>";
-        } else if (baseDir == "") {
-            loadedContent = loadedContent.replace(/[.]{2}\//g, "");
-        }
-        $("#header").empty();
-        $("#header").append(loadedContent);
+            if (loadedContent.length == 0) {
+                loadedContent = "<p>Network error occured, please reload the page.</p>";
+            } else if (baseDir == "") {
+                loadedContent = loadedContent.replace(/[.]{2}\//g, "");
+            }
+            $("#header").empty();
+            $("#header").append(loadedContent);
+            $("#loginLink").click(function () {
+                showLoginForm();
+                return false;
+                });
         }
 
     };
-    xhttpHeader.open("GET", baseDir + "html/header.html", true);
+    xhttpHeader.open("GET", baseDir + "php/header.php", true);
     xhttpHeader.send();
 }
 

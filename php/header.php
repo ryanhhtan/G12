@@ -1,16 +1,41 @@
 <?php
-echo '
-   
-<div id="header">
+    //Start session
+    session_start();
+
+    //Include components
+    require_once('components.php');
+    require_once('config.php');
+    require_once('functions.php');
+
+?>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script src="../scripts/nav_jquery.js"></script>
+
+		<!--header with logo, navigation-->
+		<div id="header">
 			<!--logo-->
 			<div id="logo">
 			<a href="../index.html"><img src="../images/logo.png" title="logo" alt="Logo" style="width: 100px; height: 100px"></a>
 			</div>
+
+           <div id="loginbar">
+            <?php 
+                if(!isLogedIn()) {
+                   echo '<a id="loginLink" href="/php/loginPage.php">Login</a>';
+                   echo '<a id="registerlink" href="/php/registerPage.php">Register</a>';
+                } else {
+                    echo '<a href="#">' .$_SESSION['SESS_USER_NAME'] .'</a>';
+                    echo '<a href="/php/logout.php">Logout</a>';
+                }           
+                ?>           
+            </div>
+
 			<!--navigation bar, fixed at the top-->
 			<div id="navigation">
 				<div id="menubar">
 					<ul id="mainmenu">
-						<li id="homepage"><a href="../index.html" title="homepage">Home</a></li>
+						<li id="homepage"><a href="../index.php" title="homepage">Home</a></li>
 						<li id="studyinfomenu"><a href="../html/schools.html" title="Schools Info">Study Info</a></li>
 						<li id="livinginfomenu"><a href="../html/livingHomepage.html" title="Schools Info">Living Info</a></li>
 						<li id="interactingmenu">Interacting</li>
@@ -40,13 +65,11 @@ echo '
 					<div id="interaction" class="menuitems">
 						<ul  class="submenu">
 							<li><a href="../html/contact.html" title="Contact us">Contact Us</a></li>
-							<li><a href="../html/CommentBoard.html" title="Comments">Comments</a></li>
+							<li><a href="../html/CommentBoardWithAccordion.html" title="Comments">Comments on schools</a></li>
+                            <li><a href="../php/comment.php" title="Post a comment">Posting Comments</a></li>
 						</ul>
 					</div>			
 				</div>
 
 			</div>
 		</div>
-'
-?>
-		

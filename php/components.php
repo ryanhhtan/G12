@@ -66,24 +66,23 @@ function loadRegisterForm() {?>
 
                    <!-- <input id="btnCloseRegisterPane" type="button" value="X">-->
                     <form id="registerForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-                    <input id="btnCloseRegisterPane" class="closeButton" type="button" value="X">
                     <label for="userName">User name</label>
-                    <label class="hintInfo"><?php echo $GLOBALS['hintUserName'];?></label>
+                    <label id="hintUserName" class="hintInfo"><?php echo $GLOBALS['hintUserName'];?></label>
                     <br>
                     <input type="text" id="userName" name="userName" value="<?php echo $GLOBALS['userName'];?>">
                     <br>
                     <label for="password">Password</label>
-                    <label class="hintInfo"><?php echo $GLOBALS['hintPassword'];?></label>
+                    <label id="hintPassword" class="hintInfo"><?php echo $GLOBALS['hintPassword'];?></label>
                     <br>
                     <input type="password" id="password" name="password">
                     <br>
                     <label for="confirmPassword">Confirm password</label>
-                    <label class="hintInfo"><?php echo $GLOBALS['hintConfirmPassoword'];?></label>
+                    <label id="hintConfirmPassword" class="hintInfo"><?php echo $GLOBALS['hintConfirmPassoword'];?></label>
                     <br>
                     <input type="password" id="confirmPassword" name="confirmPassword">
                     <br>
                     <label for="email">Email</label>
-                    <label class="hintInfo"><?php echo $GLOBALS['hintEmail'];?></label>
+                    <label id="hintEmail" class="hintInfo"><?php echo $GLOBALS['hintEmail'];?></label>
                     <br>
                     <input type="text" id="email" name="email" value="<?php echo $GLOBALS['email'];?>">
                     <br>
@@ -190,7 +189,7 @@ function loadRegisterForm() {?>
              echo '<div class="postContent">' .$result['content'] .'</div>';
              echo '</div>';
 
-             $sql = "SELECT userName, content FROM account, reply WHERE topicId='" . $postId . "' AND reply.userId = account.id" ;
+             $sql = "SELECT userName, content, datetime FROM account, reply WHERE topicId='" . $postId . "' AND reply.userId = account.id" ;
              $stmt = $conn->query($sql);
              foreach($stmt->fetchAll() as $reply) {
              echo '<div class="topicDetails">';

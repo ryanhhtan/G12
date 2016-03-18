@@ -49,7 +49,7 @@
          $validInput = FALSE;   
         }
         if ($password != "" && $confirmPassword == "") {
-         $GLOBALS['hintConfirmPassoword'] = "*Re-entered password cannot be empty" ;
+         $GLOBALS['hintConfirmPassoword'] = "*confirm password cannot be empty" ;
          $validInput = FALSE; 
         }
         if ($password != $confirmPassword){
@@ -147,8 +147,8 @@
                 } else {
                     $result = $stmt->fetch();
                     $userId = $result['id'];
-
-                    $sql = "INSERT INTO reply (topicId, userId, content) VALUES ('$postId', '$userId', '$comment')";
+                    $now = date("d/m/y h:i:s"); 
+                    $sql = "INSERT INTO reply (topicId, userId, content, datetime) VALUES ('$postId', '$userId', '$comment', '$now')";
                     $conn->exec($sql);
 
                 }

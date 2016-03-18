@@ -40,22 +40,60 @@ $(document).ready(function () {
 //test function
 function testEmail(id) {
     var str = $(id).val();
-    if (str.length == 0) {
-        $("#hintEmail").text("Email can not be blank.");
+	//empty email address
+    if (str.length == 0){
+        $("#hintEmail").text("*Email cannot be empty.");
         return false;
-    } else if (! (/^[a-zA-Z0-9]/.test(str))) {
-        $("#hintEmail").text("Email should begin with letters or number.");
-        return false;
-    } else if (! (/^[a-zA-Z0-9]+@/.test(str))) {
-        $("#hintEmail").text("Email should contain a \"@\" sign.");
-        return false;
-    } else if (! (/[.](com|net|org|ca)$/i.test(str))) {
-        $("#hintEmail").text("Email should end with \".com\",  \".net\",  \".org\" or  \".ca\".");
-        return false;
-    } else {
-        return true;
     }
-    //return (/[a-zA-Z0-9]+@[a-zA-Z0-9]+[.](com|net|org|ca)$/i.test(str));
+	
+	//Not begin with letters or digits.
+	if (!/^\w/.test(str)) {
+	    $("#hintEmail").text("*Email should begin with letters or digits.");
+        return false;
+	}
+	
+	//Not containing "@"
+	if(!/@/.test(str)) {
+		$("#hintEmail").text("*Email should contain an \"@\" sign.");
+        return false;
+	}	
+	
+	//Containing space
+	if (/\s/.test(str)){
+		$("#hintEmail").text("*Email should not contain space.");
+        return false;
+
+	}
+	
+	//Containing more than one "@"
+	if(/[@][\w\W]*[@]/.test(str)) {
+		$("#hintEmail").text("*Email should contain only one \"@\" sign.");
+        return false;
+	}
+	
+	//"@"bfollowed by ".", no domain name 
+	if(/@[.]/.test(str)) {
+		$("#hintEmail").text("\"@\" should not immediately followed by \".\"");
+        return false;
+	}
+		
+	//Containing special characters
+	if(/[^\w@.]/.test(str)) {
+		$("#hintEmail").text("*Email should contain only characters and digits.");
+        return false;
+	}
+	
+	if(/[.][.]/.test(str)) {
+		$("#hintEmail").text("*Email should not contain \"..\"");
+        return false;
+	}
+	
+	//End with invalid domain name
+	if(!/[.][\w]{2,}$/.test(str)) {
+		$("#hintEmail").text("*Email should end with a top level domain name.");
+        return false;		
+	}	
+	return true;
 }
 
 function warnInvalidEmail(id) {

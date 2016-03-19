@@ -27,7 +27,7 @@
     define('DB_USER', 'comp153612');
     define('DB_PASSWORD', 'comp[]1536[]12');
     define('DB_DATABASE', 'comp153612');
-    define('HOMEURL', 'http://students.bcitdev.com/A00950721/G12/index.html');
+    define('HOMEURL', 'http://students.bcitdev.com/A00950721/G12/index.php');
     define('COMMENTURL', 'http://students.bcitdev.com/A00950721/G12/php/comment.php');
     define('ROOT', 'http://students.bcitdev.com/A00950721/G12/');
     }
@@ -38,7 +38,7 @@
     define('DB_USER', 'comp153612');
     define('DB_PASSWORD', 'comp[]1536[]12');
     define('DB_DATABASE', 'comp153612');
-    define('HOMEURL', 'http://students.bcitdev.com/A00950721/G12/index.html');
+    define('HOMEURL', 'http://students.bcitdev.com/A00950721/G12/index.php');
     define('COMMENTURL', 'http://students.bcitdev.com/A00950721/G12/php/comment.php');
     */
 

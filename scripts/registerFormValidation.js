@@ -14,6 +14,7 @@ $(document).ready(function () {
         warnEmail("#email");
     });
 
+    $("#registerForm").on("submit", checkAll);
 
 });
 
@@ -166,5 +167,35 @@ function warnEmail(id) {
         $("#hintEmail").css("visibility","hidden");
         return false;
     }
+
+}
+
+function checkAll() {
+    var formComplete = true;
+    if ($("#userName").val().length == 0) { 
+        $("#hintUserName").text("*User name cannot be empty");
+        $("#hintUserName").css("visibility", "visible");
+        formComplete = false;
+    }
+
+    if ($("#password").val().length == 0) { 
+        $("#hintPassword").text("*User name cannot be empty");
+        $("#hintPassword").css("visibility", "visible");
+        formComplete = false;
+    }
+
+    if ($("#confirmPassword").val().length == 0) { 
+        $("#hintConfirmPassword").text("*User name cannot be empty");
+        $("#hintConfirmPassword").css("visibility", "visible");
+        formComplete = false;
+    }
+
+    if ($("#email").val().length == 0) { 
+        $("#hintEmail").text("*User name cannot be empty");
+        $("#hintEmail").css("visibility", "visible");
+        formComplete = false;
+    }
+
+    return formComplete;
 
 }

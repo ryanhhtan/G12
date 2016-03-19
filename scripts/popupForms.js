@@ -30,7 +30,7 @@ $(document).ready(function () {
     });
 
     $("#btnCloseLoginPane").click(function () {
-       hideLoginForm();
+        hideLoginForm();
     });
 });
 
@@ -40,6 +40,7 @@ function showLoginForm() {
 
 function hideLoginForm() {
     $("#loginPane").css("visibility", "hidden");
+    $(".hintInfo").css("visibility", "hidden");
 }
 
 function showNewPostPane() {
@@ -48,6 +49,7 @@ function showNewPostPane() {
 
 function hideNewPostPane() {
     $("#newPostPane").css("visibility", "hidden");
+    $(".hintInfo").css("visibility", "hidden");
 }
 
 function showReplyPostPane() {
@@ -55,5 +57,6 @@ function showReplyPostPane() {
 }
 function hideReplyPostPane() {
     $("#replyPostPane").css("visibility", "hidden");
+    $(".hintInfo").css("visibility", "hidden");
 }
 

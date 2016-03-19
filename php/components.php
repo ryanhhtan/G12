@@ -40,13 +40,13 @@ function loadLoginForm($mask, $visibility) {?>
             <input id="btnCloseLoginPane" class="closeButton" type="button" value="X">
             <form id="loginForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <label for="userName">User name</label>
-            <?php echo '<label class="hintInfo">'.$GLOBALS['hintUserName'].'</label>';?>
+            <?php echo '<label id="hintUserName" class="hintInfo">'.$GLOBALS['hintUserName'].'</label>';?>
 
             <br>
             <input type="text" id="userName" name="userName" value="<?php echo $GLOBALS['userName'];?>">
             <br>
             <label for="password">Password</label>
-            <?php echo '<label class="hintInfo">'.$GLOBALS['hintPassword'].'</label>';?>
+            <?php echo '<label id="hintPassword" class="hintInfo">'.$GLOBALS['hintPassword'].'</label>';?>
             <br>
             <input type="password" id="password" name="password">
             <br>
@@ -133,12 +133,12 @@ function loadRegisterForm() {?>
         <form id="newPostForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
         <input id="btnCloseNewPostPane" class="closeButton" type="button" value="X">
         <label for="topic">Topic</label>
-        <label class="hintInfo"><?php echo $GLOBALS['hintTopic'];?></label>
+        <label id="hintTopic" class ="hintInfo"><?php echo $GLOBALS['hintTopic'];?></label>
         <br>
         <input type="text" id="topic" name="topic">
         <br>
         <label for="newComment">Comment</label>
-        <label class="hintInfo"><?php echo $GLOBALS['hintComment'];?></label>
+        <label id="hintNewComment" class="hintInfo"><?php echo $GLOBALS['hintComment'];?></label>
         <br>
         <textarea id="newComment" cols="60" rows="10" name="comment"></textarea>
         <br>
@@ -155,10 +155,10 @@ function loadRegisterForm() {?>
 
         <form id="replyPostForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
         <input id="btnCloseReplyPostPane" class="closeButton" type="button" value="X">
-        <label>Your reply</label>
-        <label class="hintInfo"><?php echo $GLOBALS['hintComment'];?></label>
+        <label for="replyComment">Your reply</label>
+        <label id="hintReplyComment" class="hintInfo"><?php echo $GLOBALS['hintComment'];?></label>
         <br>
-                <textarea id="newComment" cols="60" rows="10" name="comment"></textarea>
+        <textarea id="replyComment" cols="60" rows="10" name="comment"></textarea>
         <br>
         <input type="hidden" value="replyPost" name="action">
         <input type="hidden" value="<?php echo $GLOBALS[currentPostId]?>" name="postId">
@@ -180,12 +180,12 @@ function loadRegisterForm() {?>
          $sql = "SELECT userName, topic, datetime, content FROM account, topic WHERE topic.id = '" . $postId . "' AND topic.userId = account.id";
          $stmt = $conn->query($sql);
          if ($stmt->rowCount() == 0 ) {
-             echo '<div class="topic">' . 'Select a topic from the left.' . '</div><br>';
+             echo '<div class="topicTitle">' . 'Select a topic from the left.' . '</div><br>';
          } else {
              $result = $stmt->fetch();
-             echo '<div class="topic"> Topic: ' . $result[topic] . '</div><br>';
+             echo '<div class="topicTitle"> Topic: ' . $result[topic] . '</div><br>';
              echo '<div class="topicDetails">';
-             echo '<a href="#">' .$result['userName'] . '</a>  wrote at ' . $result['datetime'] . ': <br><br>';
+             echo '<a href="#">' .$result['userName'] . '</a>  wrote at ' . $result['datetime'] . ': <br>';
              echo '<div class="postContent">' .$result['content'] .'</div>';
              echo '</div>';
 
@@ -193,7 +193,7 @@ function loadRegisterForm() {?>
              $stmt = $conn->query($sql);
              foreach($stmt->fetchAll() as $reply) {
              echo '<div class="topicDetails">';
-             echo '<a href="#">' .$reply['userName'] . '</a>  reply at ' . $reply['datetime'] . ': <br><br>';
+             echo '<a href="#">' .$reply['userName'] . '</a>  reply at ' . $reply['datetime'] . ': <br>';
              echo '<div class="postContent">' .$reply['content'] .'</div>';
              echo '</div>';
              }
@@ -230,6 +230,7 @@ function loadRegisterForm() {?>
           echo $sql . "<br>" .$e->getMessage();
         }
 ?>
+        <h1>User Profile</h1>
         <table id="tblUserProfile">
                 <tr>
                     <th>Info</th>

@@ -66,8 +66,7 @@
         <link href="../style/comment.css" rel="stylesheet" type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <script src="../scripts/addheaderfooter_jquery.js"></script>
-        <script src="../scripts/popupForms.js"></script>
-        <script src="../scripts/formvalidation.js"></script>
+        <script src="../scripts/postFormValidation.js"></script>
 	</head>
 	<!--content-->
 	<body>
@@ -76,18 +75,9 @@
 		
 		<!--conten-->
 		<div id="content">
-            <div id="popup">
-                <?php
-                    if (isLogedIn()) {
-                        loadNewPostPane($postNewVisibility);
-                        loadReplyPostPane($replyPostVisibility);
-                    } else {
-                      loadLoginForm($mask, $loginPaneVisibility);  
-                    }
-                    
-                    
-                ?>
-            </div>
+        <div id="picture">
+        <!--<img src="images/bannerhome.jpg" alt="banner">-->
+        </div>
             <div id="posts">
                 <div id="topics">
                     <?php
@@ -103,6 +93,16 @@
 	
 		</div>
 
+        <div id="popup">
+                <?php
+                    if (isLogedIn()) {
+                        loadNewPostPane($postNewVisibility);
+                        loadReplyPostPane($replyPostVisibility);
+                    } else {
+                      loadLoginForm($mask, $loginPaneVisibility);  
+                    }                    
+                ?>
+            </div>
 		
 		<div id="footer"></div>	
 	</body>

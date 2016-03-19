@@ -30,7 +30,7 @@
           $GLOBALS['hintTopic'] = "*Topic cannot be empty.";  
           $validInput = FALSE;
         }
-        if ($topic == "") {
+        if ($comment == "") {
           $GLOBALS['hintComment'] = "*Comment cannot be empty.";  
           $validInput = FALSE;
         }

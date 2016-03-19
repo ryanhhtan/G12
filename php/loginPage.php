@@ -1,12 +1,12 @@
 <?php
+    //Use output buffer mode
+    ob_start();
+
     //Start session
     session_start();
 
     //Include database config
     require_once("config.php");
-
-    //Include components;
-    require_once("components.php");
 
     //Include functions;
     require_once("functions.php");
@@ -17,10 +17,13 @@
 
         if (validateLoginParam($userName, $password)){
             if (login($userName, $password)){
-             header('location:' . HOMEURL);   
+             header('Location:' . HOMEURL);   
             }
         }
     }
+
+    //Include components;
+    require_once("components.php");
 
 ?>
 

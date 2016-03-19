@@ -1,9 +1,12 @@
 <?php
+    //Use output buffer mode
+    ob_start();
 
     //Start the session
     session_start();
 
     //Include config file
+
 
     require_once("config.php");
 
@@ -14,7 +17,7 @@
     logout();
 
     //redirect to home page
-    header('location:' .HOMEURL); 
+    header('Location:' .HOMEURL); 
     exit;
 ?>
 <!DOCTYPE html>
@@ -45,3 +48,8 @@
 
 
 </html>
+
+<?php
+// end output buffering and send our HTML to the browser as a whole
+ob_end_flush();
+?>

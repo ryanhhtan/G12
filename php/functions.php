@@ -120,7 +120,7 @@
               $now = date("d/m/y h:i:s"); 
               $sql = "INSERT INTO topic (userId, topic, content, datetime) VALUES ('$userId', '$topic', '$comment', '$now')";
               $conn->exec($sql);
-              header('location:' . htmlspecialchars($_SERVER["PHP_SELF"]));
+              header('location:' . htmlspecialchars($_SERVER["PHP_SELF"]), ENT_QUOTES | ENT_HTML5);
 
           } catch (PDOException $e) {
               echo $sql . "<br>" .$e->getMessage();
@@ -194,7 +194,7 @@
     function sanitizeInput($data) {
         $data = trim($data);
         $data = stripcslashes($data);
-        $data = htmlspecialchars($data);
+        $data = htmlspecialchars($data, ENT_QUOTES | ENT_HTML5);
         return $data;
     }
 

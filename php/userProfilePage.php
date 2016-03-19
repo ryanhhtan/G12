@@ -1,4 +1,7 @@
 <?php
+    //Use output buffer mode
+    ob_start();
+
     //Start session
     session_start();
 
@@ -48,3 +51,8 @@
 
 
 </html>
+
+<?php
+// end output buffering and send our HTML to the browser as a whole
+ob_end_flush();
+?>

@@ -25,7 +25,7 @@
                    echo '<a id="loginLink" href="../php/loginPage.php">Login</a>';
                    echo '<a id="registerlink" href="../php/registerPage.php">Register</a>';
                 } else {
-                    echo '<a href="#">' .$_SESSION['SESS_USER_NAME'] .'</a>';
+                    echo '<a href="../php/userProfilePage.php?queryUser=' . $_SESSION['SESS_USER_NAME'] . '">' .$_SESSION['SESS_USER_NAME'] .'</a>';
                     echo '<a href="../php/logout.php">Logout</a>';
                 }           
                 ?>           

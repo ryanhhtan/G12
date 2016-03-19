@@ -11,7 +11,7 @@
         //loadHeader();
         //loadFooter();
         loadDoc(baseDir + "php/header.php", loadHeader);
-        loadDoc(baseDir + "html/footer.html", loadFooter);
+        loadDoc(baseDir + "php/footer.php", loadFooter);
     });
 
     function loadDoc(url, callbackFunc) { 
@@ -21,7 +21,7 @@
             callbackFunc(xhttp);
         }
     };
-      xhttp.open("GET", url, true);
+      xhttp.open("POST", url, true);
       xhttp.send();
     }
 

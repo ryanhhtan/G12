@@ -214,3 +214,55 @@ function loadRegisterForm() {?>
      } 
  ?>  
 
+<?php function loadProfileTable($queryUserName){?>
+    <div id="profile">
+
+<?php
+        try {
+        $conn = new PDO("mysql:host=" . DB_HOST .";dbname=" . DB_DATABASE, DB_USER, DB_PASSWORD);
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $sql = "SELECT userName, email FROM account WHERE userName='" . $queryUserName ."'";
+        $stmt = $conn->query($sql);
+        $result = $stmt->fetch();
+        $queryUserName = $result['userName'];
+        $email = $result['email'];
+        } catch (PDOException $e) {
+          echo $sql . "<br>" .$e->getMessage();
+        }
+?>
+        <table id="tblUserProfile">
+                <tr>
+                    <th>Info</th>
+                    <th>Details</th>
+                    </tr>
+                <tr>
+                    <td>User Name:</td>
+                    <td><?php echo $queryUserName?></td>
+                    </tr>
+                <tr>
+                    <td>E-mail:</td>
+<?php 
+                if ($queryUserName == $_SESSION['SESS_USER_NAME']){
+                    echo '<td>' . $email . '</td>';
+                } else {
+                    echo '<td>No public info </td>';
+                }
+?>
+                    </tr>
+        </table>
+<?php
+                if ($queryUserName == $_SESSION['SESS_USER_NAME']) {?>
+
+                   <form id="deregisterForm" action="deregister.php" method="POST">
+                       <input type="hidden" name="deregisterUser" value="<?php echo $queryUserName?>">
+                       <input type="submit" value="Deregister me">
+                       </form>
+                  
+                <?php
+                 }   
+                ?>
+        </div>
+<?php
+ }   
+?>
+

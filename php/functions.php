@@ -202,5 +202,47 @@
         return(isset($_SESSION['SESS_USER_NAME']) && (trim($_SESSION['SESS_USER_NAME']) != ''));
     }
 
+    function logout() {
+        session_unset(); 
+        session_destroy(); 
+    }
+
+    function deregister($deregisterUser) {
+        try {
+                $conn = new PDO("mysql:host=" . DB_HOST .";dbname=" . DB_DATABASE, DB_USER, DB_PASSWORD);
+                $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                $sql = "SELECT id FROM account WHERE userName='" . $deregisterUser . "'";
+                $stmt = $conn->query($sql);
+                $result = $stmt->fetch();
+                $userId = $result['id'];
+                //Delete all the replies the user posted.
+                $sql = "DELETE FROM reply WHERE userId=" .$userId ;
+                $conn->exec($sql);
+
+                //Delete all the replies in the topic the user posted.
+                $sql = "SELECT id FROM topic WHERE userId=" .$userId;
+                $stmt = $conn->query($sql);
+                foreach ($stmt->fetchAll() as $row){
+                    $topicId = $row['id'];
+                    $sql = "DELETE FROM reply WHERE topicId='" . $topicId ."'";
+                    $conn->exec($sql);
+                }
+
+                //Delete all the topic the user posted.
+                $sql = "DELETE FROM topic WHERE userId=" .$userId ;
+                $conn->exec($sql);
+                //Delete the user account
+                $sql = "DELETE FROM account WHERE id=" .$userId ;
+                $conn->exec($sql);
+                logout();
+                return TRUE;
+            
+        } catch (PDOException $e) {
+          echo $sql . "<br>" .$e->getMessage();
+          return FALSE;
+        }
+        return FALSE;
+    }
+
 
 ?>

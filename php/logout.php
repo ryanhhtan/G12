@@ -6,8 +6,10 @@
 
     require_once("config.php");
 
+    //Include functions file
+    require_once("functions.php");
+
     //clear session data
-    session_unset(); 
-    session_destroy(); 
+    logout();
     header('location:' .HOMEURL);
 ?>

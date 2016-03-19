@@ -10,8 +10,15 @@
 
     //Include control functions
     require_once("functions.php");
-    if($_SERVER['REQUEST_METHOD'] == "GET") {
-        $queryUser=$_GET['queryUser'];
+    if($_SERVER['REQUEST_METHOD'] == "POST") {
+        $deregisterUser=$_POST['deregisterUser'];
+        if ($deregisterUser == $_SESSION['SESS_USER_NAME']){
+            if (deregister($deregisterUser)){
+                $message = "Deregister succeed!";
+            }
+        } else {
+            $message="You can only deregister yourself.";
+        }
     }
 
 ?>
@@ -37,7 +44,7 @@
 		<!--conten-->
 		<div id="content">
             <?php
-                loadProfileTable($queryUser);
+                echo $message;
             ?>
 
 		</div>

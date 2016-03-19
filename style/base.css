@@ -269,3 +269,13 @@ table a {
     background-color: white;
     color: blue;
 }
+
+#profile {
+    width: 50%;
+    margin: auto;
+    text-align: left;
+}
+
+#tblUserProfile {
+    width: 100%;
+}

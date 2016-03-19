@@ -54,8 +54,8 @@ function loadLoginForm($mask, $visibility) {?>
             <input type="submit" value="Log in">                    
             </form>
 
-            <p>Forget username/password? Find it <a href="/html/findPassWord.html">here</a></p>
-            <p>No user name? please <a href="/php/registerPage.php">register</a> &nbsp; one.</p>
+            <p>Forget username/password? Find it <a href="<?php echo ROOT?>/php/findPassWord.php">here</a></p>
+            <p>No user name? please <a href="<?php echo ROOT?>php/registerPage.php">register</a> &nbsp; one.</p>
             </div>
         </div>
     

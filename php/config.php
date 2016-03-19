@@ -8,6 +8,7 @@
     define('DB_DATABASE', 'myForum');
     define('HOMEURL', 'http://localhost:11111/index.php');
     define('COMMENTURL', 'http://localhost:11111/php/comment.php');
+    define('ROOT', 'http://localhost:11111/');
 
     }
 
@@ -18,6 +19,7 @@
     define('DB_DATABASE', 'b9_17390383_issg');
     define('HOMEURL', 'http://www.1536g12.byethost9.com/index.php');
     define('COMMENTURL', 'http://www.1536g12.byethost9.com/php/comment.php');
+    define('ROOT', 'http://www.1536g12.byethost9.com/');
     }
 
     if ($server == "students.bcitdev.com") {
@@ -27,6 +29,7 @@
     define('DB_DATABASE', 'comp153612');
     define('HOMEURL', 'http://students.bcitdev.com/A00950721/G12/index.html');
     define('COMMENTURL', 'http://students.bcitdev.com/A00950721/G12/php/comment.php');
+    define('ROOT', 'http://students.bcitdev.com/A00950721/G12/');
     }
 
     /*

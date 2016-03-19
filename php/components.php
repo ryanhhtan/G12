@@ -109,7 +109,7 @@ function loadRegisterForm() {?>
               $sql = "SELECT topic.id, username, topic, datetime FROM account, topic WHERE account.id=topic.userId ORDER BY topic.id DESC";
               foreach($conn->query($sql) as $row) {
                   echo '<tr>';
-                  echo '<td><a href="#">' .$row['username'] . '</a></td>';
+                  echo '<td><a href="userProfilePage.php?queryUser=' .$row['username'] .  '">' .$row['username'] . '</a></td>';
                   echo '<td><a href="comment.php?postId=' . $row['id'] . '">' .$row['topic'] . '</a></td>';
                   echo '<td>' .$row['datetime'] .'</td>';
                   echo "</tr>";
@@ -245,13 +245,13 @@ function loadRegisterForm() {?>
                 if ($queryUserName == $_SESSION['SESS_USER_NAME']){
                     echo '<td>' . $email . '</td>';
                 } else {
-                    echo '<td>No public info </td>';
+                    echo '<td>Private</td>';
                 }
 ?>
                     </tr>
         </table>
 <?php
-                if ($queryUserName == $_SESSION['SESS_USER_NAME']) {?>
+                if (isLogedIn() && $queryUserName == $_SESSION['SESS_USER_NAME']) {?>
 
                    <form id="deregisterForm" action="deregister.php" method="POST">
                        <input type="hidden" name="deregisterUser" value="<?php echo $queryUserName?>">

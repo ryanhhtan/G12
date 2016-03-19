@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     $("#loginLink").click(function () {
         showLoginForm();
-        return false;
+        return false;            
     });
 
     $("#btnNewPost").click(function () {

@@ -180,7 +180,7 @@ function loadRegisterForm() {?>
          $sql = "SELECT userName, topic, datetime, content FROM account, topic WHERE topic.id = '" . $postId . "' AND topic.userId = account.id";
          $stmt = $conn->query($sql);
          if ($stmt->rowCount() == 0 ) {
-             echo '<div class="topic">' . 'Select a topic from the topic list to view details' . '</div><br>';
+             echo '<div class="topic">' . 'Select a topic from the left.' . '</div><br>';
          } else {
              $result = $stmt->fetch();
              echo '<div class="topic"> Topic: ' . $result[topic] . '</div><br>';

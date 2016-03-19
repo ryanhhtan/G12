@@ -245,7 +245,7 @@ function loadRegisterForm() {?>
                 if ($queryUserName == $_SESSION['SESS_USER_NAME']){
                     echo '<td>' . $email . '</td>';
                 } else {
-                    echo '<td>Private</td>';
+                    echo '<td>******</td>';
                 }
 ?>
                     </tr>

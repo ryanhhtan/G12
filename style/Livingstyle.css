@@ -49,6 +49,7 @@ nav a:visited {color: #66c2ff;
 }
 .content {	width:950px;
 			margin:auto;
+            position: relative;
 }			
 			
 .leftF	 {	padding-top:10px;
@@ -128,6 +129,14 @@ div a:active {
     background-color: transparent;
     text-decoration: underline;
 }
+
+.text{
+    border:5px solid #000000;
+    position:absolute;
+    right: 10px;
+}
+
+
 .footer{
 	background-color:#EFE6CE;
 	padding-top:25px;

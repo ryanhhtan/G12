@@ -76,12 +76,13 @@
 	<body>
 		<!--header with logo, navigation-->
 		<div id="header"></div>
-		
-		<!--conten-->
-		<div id="content">
+
         <div id="picture">
         <!--<img src="images/bannerhome.jpg" alt="banner">-->
-        </div>
+        </div>		
+		<!--conten-->
+		<div id="content">
+
             <div id="posts">
                 <div id="topics">
                     <?php

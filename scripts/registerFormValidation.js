@@ -36,8 +36,10 @@ function testUserName(id) {
 function warnUserName(id) {
     if (!testUserName(id)) {
         $("#hintUserName").css("visibility", "visible");
+        return true;
     } else { 
         $("#hintUserName").css("visibility", "hidden");
+        return false;
     }
 }
 
@@ -48,7 +50,7 @@ function testPassword(id) {
         return false;
     }
 
-    if (str.length < 9){
+    if (str.length < 8){
         $("#hintPassword").text("*Password should be at least 8 characters.");
         return false;
     }
@@ -73,8 +75,10 @@ function testPassword(id) {
 function warnPassword(id) { 
     if (!testPassword(id)) {
         $("#hintPassword").css("visibility", "visible");
+        return true;
     } else { 
         $("#hintPassword").css("visibility", "hidden");
+        return false;
     }
 }
 
@@ -86,7 +90,7 @@ function testConfirmPassword(id) {
     }
 
         if (str != $("#password").val()) { 
-        $("#hintConfirmPassword").text("*Two password are not the same, please re-enter.");
+        $("#hintConfirmPassword").text("*Two password are not the same, please enter again.");
         return false;
     }
     return true;
@@ -95,8 +99,10 @@ function testConfirmPassword(id) {
 function warnConfirmPassword(id) { 
     if (!testConfirmPassword(id)) {
         $("#hintConfirmPassword").css("visibility", "visible");
+        return true;
     } else { 
         $("#hintConfirmPassword").css("visibility", "hidden");
+        return false;
     }
 }
 
@@ -171,31 +177,23 @@ function warnEmail(id) {
 }
 
 function checkAll() {
-    var formComplete = true;
-    if ($("#userName").val().length == 0) { 
-        $("#hintUserName").text("*User name cannot be empty");
-        $("#hintUserName").css("visibility", "visible");
-        formComplete = false;
+    var formValid = true;
+    if (warnUserName("#userName")) { 
+        formValid = false;
     }
 
-    if ($("#password").val().length == 0) { 
-        $("#hintPassword").text("*User name cannot be empty");
-        $("#hintPassword").css("visibility", "visible");
-        formComplete = false;
+    if (warnPassword("#password")) { 
+        formValid = false;
     }
 
-    if ($("#confirmPassword").val().length == 0) { 
-        $("#hintConfirmPassword").text("*User name cannot be empty");
-        $("#hintConfirmPassword").css("visibility", "visible");
-        formComplete = false;
+    if (warnConfirmPassword("#confirmPassword")) { 
+        formValid = false;
     }
 
-    if ($("#email").val().length == 0) { 
-        $("#hintEmail").text("*User name cannot be empty");
-        $("#hintEmail").css("visibility", "visible");
-        formComplete = false;
+    if (warnEmail("#email")) { 
+        formValid = false;
     }
 
-    return formComplete;
+    return formValid;
 
 }

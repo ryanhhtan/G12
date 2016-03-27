@@ -1,0 +1,108 @@
+#top{
+    height: 100px;
+}
+
+#block{
+	width: 1080px;
+	height: 20px;
+}
+
+#wrapper{
+	margin: auto;
+    line-height:  200%;
+    width: 1080px;
+}
+
+#subnav{
+	width: 150px;
+	float: left;
+    text-align: center;
+}
+
+#subnav ul{
+	padding: 10px 0px 0px 0px;
+	list-style: none;
+}
+
+#content{
+	width: 800px;
+	height: auto;
+	float: left;
+	border: thin black dashed;
+	margin: 0px 0px 0px 10px;
+}
+
+#content{
+	width: 800px;
+	height: auto;
+	float: left;
+	border: thin black dashed;
+	margin: 0px 0px 0px 10px;
+}
+
+body {
+	width: auto;
+	margin: auto;
+    line-height:  200%;
+}
+
+#logo{
+    width: 100px;
+    float: left;
+}
+
+#quicknav{
+	width: auto;
+	height: 25px;
+	float: right;
+    padding-top: 20px;
+}
+
+#quicknav ul{
+    list-style: none;
+}
+
+#quicknav ul li {
+    display: inline;
+    font-size: 1.5em;
+}
+
+p{
+	font-family: Trebuchet MS, Georia, serif;
+    text-indent: 50px;
+}
+
+#content h1, h2, p, a{
+	padding: 0px 20px 0px 20px;
+}
+
+a{
+	transition: color ease .35s;
+}
+
+a:link{
+	text-decoration: none;
+	font-family: Trebuchet MS, Georia, serif;
+	color: #554FFD;
+}
+
+a:hover{
+	color: red;
+}
+
+a:visited{
+	color: black;
+}
+
+.NavLine{
+    width: 100%;
+}
+
+body {
+	width: auto;
+	margin: auto;
+    background-image: url(/images/Vine.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right bottom;
+}

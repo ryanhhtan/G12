@@ -72,7 +72,7 @@
         <script src="../scripts/popupForms.js"></script>
         <script src="../scripts/postFormValidation.js"></script>
 	</head>
-	<!--content-->
+
 	<body>
 		<!--header with logo, navigation-->
 		<div id="header"></div>
@@ -80,7 +80,7 @@
         <div id="picture">
         <!--<img src="images/bannerhome.jpg" alt="banner">-->
         </div>		
-		<!--conten-->
+		<!--content-->
 		<div id="content">
 
             <div id="posts">

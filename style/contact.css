@@ -1,7 +1,8 @@
 #content {
-	width: 80%;
+	width: 90%;
 	margin: auto;
     position: relative;
+    background-color: #e6ffff;
 
 }
 
@@ -27,11 +28,11 @@ textarea {
 }
 
 .contactus {
-	margin: 10px;
+	margin: auto;
 	background-color: white;
 	color: green;
 	padding: 5px;
-    width: 60%;
+    width: 80%;
 }
 
 .asterisk {

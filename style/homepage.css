@@ -1,6 +1,4 @@
 #content {
-	width: 90%;
-	margin: auto;
     position: relative;
     background-color: #e6ffff;
 }
@@ -46,6 +44,7 @@
 
 #picture {
     width: 100%;
+    min-width: 400px;
     height: 400px;
     background-image: url(../images/bannerhome.jpg);
     background-repeat: no-repeat;
@@ -55,4 +54,7 @@
 .galleries a {
     text-decoration: none;
     font-size: larger;
+    display: block;
+    width:  400px;
+    text-align: center;
 }

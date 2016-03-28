@@ -124,7 +124,7 @@
     position: absolute;
     background-color: #c7c7f9;
     left: 300px;
-    top: 200px;
+    top: 400px;
     z-index: 101;
 }
 
@@ -169,6 +169,8 @@
 
 .closeButton {
     float: right;
+    background-color: red;
+    color: white;
 }
 
 

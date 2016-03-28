@@ -2,14 +2,24 @@
     margin: auto;
 }
 
-#content h1{
+/*#content h1{
     font-family: 'Segoe UI Emoji';
     font-size: xx-large;
     color: #ff00dc;
-}
+}*/
 
 #picture{
-    float: left;
+	height: 400px;
+    padding: 0px 0px 0px 0px;
+    background-image: url("../images/healthinsurance.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 35px;
+	padding-top: 60px;
+	color: rgba(255, 0, 0, 0.5);
+	letter-spacing: 0.5em;
+    text-align: center;
 }
 
 #content p ul{

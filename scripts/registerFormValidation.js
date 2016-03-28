@@ -60,7 +60,7 @@ function testPassword(id) {
         return false;
     }
 
-    if (!(/[A-Z]/.test(str)) && (/[a-z]/.test(str))){
+    if (!(/[A-Z]/.test(str) && /[a-z]/.test(str))){
         $("#hintPassword").text("*Password should contain upper and lower case.");
         return false;
     }

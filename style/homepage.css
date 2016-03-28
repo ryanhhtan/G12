@@ -1,5 +1,5 @@
 #content {
-	width: 80%;
+	width: 1080px;
 	margin: auto;
     position: relative;
 
@@ -49,7 +49,7 @@
     height: 400px;
     background-image: url(../images/bannerhome.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
 }
 
 .galleries a {

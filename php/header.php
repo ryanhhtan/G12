@@ -53,6 +53,7 @@
 							<li><a href="../html/UBC.html">UBC</a></li>
 							<li><a href="../html/SFU.html">SFU</a></li>
 							<li><a href="../html/Langara.html">Langara</a></li>
+                            <li><a href="../html/ContactSchool.html">Contact Schools</a></li>
 						</ul>
 					</div>
 					<div id="livinginfo" class="menuitems">
@@ -66,7 +67,6 @@
 					<div id="interaction" class="menuitems">
 						<ul  class="submenu">
 							<li><a href="../html/contact.html" title="Contact us">Contact Us</a></li>
-							<li><a href="../html/CommentBoardWithAccordion.html" title="Comments">Comments on schools</a></li>
                             <li><a href="../php/comment.php" title="Post a comment">Posting Comments</a></li>
 						</ul>
 					</div>			

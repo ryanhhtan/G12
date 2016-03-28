@@ -2,7 +2,7 @@
     height: 100px;
 }
 
-#block{
+.block{
 	width: 1080px;
 	height: 20px;
 }
@@ -44,6 +44,7 @@ body {
 	width: auto;
 	margin: auto;
     line-height:  200%;
+    padding-bottom:  20px;
 }
 
 #logo{
@@ -101,8 +102,8 @@ a:visited{
 body {
 	width: auto;
 	margin: auto;
-    background-image: url(/images/Vine.jpg);
-    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(/images/Vine.jpg);
+    background-repeat: repeat;
     background-attachment: fixed;
     background-position: right bottom;
 }

@@ -1,4 +1,11 @@
-#sitemap {
-    background-color: #0E4D0B;
-	color: #F4EAF7;
+#content {
+    position: relative;
+    background-color: #e6ffff;
+}
+#picture {
+    width: 100%;
+    height: 400px;
+    background-image: url("../images/sitemap.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }

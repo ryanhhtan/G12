@@ -35,6 +35,7 @@ $(document).ready(function () {
 });
 
 function showLoginForm() {
+    setCenter("#loginPane");
     $("#loginPane").css("visibility", "visible");
 }
 
@@ -44,6 +45,7 @@ function hideLoginForm() {
 }
 
 function showNewPostPane() {
+    setCenter("#newPostPane");
     $("#newPostPane").css("visibility", "visible");
 }
 
@@ -53,6 +55,7 @@ function hideNewPostPane() {
 }
 
 function showReplyPostPane() {
+    setCenter("#replyPostPane");
     $("#replyPostPane").css("visibility", "visible");
 }
 function hideReplyPostPane() {
@@ -60,3 +63,10 @@ function hideReplyPostPane() {
     $(".hintInfo").css("visibility", "hidden");
 }
 
+function setCenter(id) { 
+    var top = ($(window).height() - $(id).height())/2;   
+    var left = ($(window).width() - $(id).width())/2;   
+    var scrollTop = $(document).scrollTop();   
+    var scrollLeft = $(document).scrollLeft();
+    $(id).css({ position: 'absolute', 'top': top + scrollTop, left: left + scrollLeft });
+}

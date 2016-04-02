@@ -3,7 +3,10 @@
     ob_start();
 
     //Start session
-    session_start();
+    if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    } 
 
     //Include database configure
     require_once("config.php");
@@ -53,8 +56,10 @@
         }
     }
 
-    if ($_SERVER["REQUEST_METHOD"] == "GET") {
+    if ($_GET) {
         $currentPostId = sanitizeInput($_GET['postId']);
+    } else {
+        $currentPostId = -1;
     }
 ?>
 
@@ -91,7 +96,10 @@
                     </div>
                 <div id="postDetails">
                     <?php
-                        loadPostDetails($currentPostId);
+                        if ($currentPostId) {
+                           loadPostDetails($currentPostId); 
+                        }
+                        
                     ?>
                      </div>
                 </div>

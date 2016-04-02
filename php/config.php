@@ -3,12 +3,12 @@
 
     if ($server == "localhost") {
     define('DB_HOST', 'localhost');
-    define('DB_USER', 'g12admin');
-    define('DB_PASSWORD', 'comp1536g12');
-    define('DB_DATABASE', 'myForum');
-    define('HOMEURL', 'http://localhost:11111/index.php');
-    define('COMMENTURL', 'http://localhost:11111/php/comment.php');
-    define('ROOT', 'http://localhost:11111/');
+    define('DB_USER', 'comp153612');
+    define('DB_PASSWORD', 'comp[]1536[]12');
+    define('DB_DATABASE', 'comp153612');
+    define('HOMEURL', 'http://localhost/G12/index.php');
+    define('COMMENTURL', 'http://localhost/G12/php/comment.php');
+    define('ROOT', 'http://localhost/G12/');
 
     }
 

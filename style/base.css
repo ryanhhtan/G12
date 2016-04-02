@@ -39,13 +39,22 @@
 	color: inherit;
     margin-left: 0px;
     padding-left: 0px;
+
 }
 
 
-#navigation ul , #navigation li{
+#navigation ul{
 	list-style: none;
-	margin: 5px;
+	margin: 0px;
 	padding: 0px;
+}
+
+#navigation li{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+    border-bottom: 1px solid grey;
+    text-align: center;
 }
 
 #mainmenu li {
@@ -55,6 +64,7 @@
 	margin:0px;
 	overflow: hidden;
     font-weight: bold;
+    border: none;
 }
 
 #menuitemarea {
@@ -89,13 +99,15 @@
 }
 
 #navigation li:hover {
-	color: green;
+	color: black;
+    background-color: #c0b9b9;
 }
 
 .submenu li{
-    background-color: white;
+    background-color: #ffffff;
     color: #808080;
     font-size: 25px;
+    width: 50%;
 }
 
 #content {

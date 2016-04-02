@@ -99,8 +99,8 @@
 }
 
 #navigation li:hover {
-	color: black;
-    background-color: #c0b9b9;
+	color: #A0A09F;
+    background-color: #2F2F2E;
 }
 
 .submenu li{
@@ -119,13 +119,14 @@
     width: 100%;
     font-size: small;
     clear: both;
-    background-color: #EFE6CE;
+    background-color: #2F2F2E;
 }
 
 #footercontentarea {
     width: 80%;
     margin: auto;
     text-align: center;
+    color: #A0A09F;
 }
 
 .nostyle {

@@ -58,16 +58,16 @@
 					</div>
 					<div id="livinginfo" class="menuitems">
 						<ul  class="submenu">
-                            <li><a href="../html/Immigration.html" title="Immigration & Taxes">Immigration & Taxes</a></li>
+                            <li><a href="../html/Immigration.html" title="Immigration & Taxes">Immigration</a></li>
 							<li><a href="../html/sightView.html" title="Sight Viewing">Sight Viewing</a></li>
 							<li><a href="../html/entertaiment.html" title="Entertainment">Entertainment</a></li>
-							<li><a href="../html/healthinsurance.html" title="Health Insurance">Health Insurance</a></li>
+							<li><a href="../html/healthinsurance.html" title="Health Insurance">Health</a></li>
                         </ul>
 					</div>
 					<div id="interaction" class="menuitems">
 						<ul  class="submenu">
 							<li><a href="../html/contact.html" title="Contact us">Contact Us</a></li>
-                            <li><a href="../php/comment.php" title="Post a comment">Posting Comments</a></li>
+                            <li><a href="../php/comment.php" title="Post a comment">Comments</a></li>
 						</ul>
 					</div>			
 				</div>

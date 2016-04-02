@@ -42,7 +42,7 @@
 						<li id="homepage"><a href="../index.php" title="homepage">Home</a></li>
 						<li id="studyinfomenu"><a href="../html/schools.html" title="Schools Info">Study</a></li>
 						<li id="livinginfomenu"><a href="../html/livingHomepage.html" title="Schools Info">Living</a></li>
-						<li id="interactingmenu">Interacting</li>
+						<li id="interactingmenu">Contact</li>
                         <li id="aboutmenu"><a href="../html/about.html" title="about">About Us</a></li>
 						<li id="sitemapmenu"><a href="../html/sitemap.html" title="sitemap">Sitemap</a></li>
 					</ul>

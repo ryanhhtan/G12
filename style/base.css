@@ -22,6 +22,8 @@
     display: inline-block;
     text-decoration: none;
     margin-right: 10px;
+    color: #A0A09F;
+    font-weight: bold;
 }
 
 #logo {
@@ -182,7 +184,7 @@
 
 .closeButton {
     float: right;
-    background-color: red;
+    background-color: #f67878;
     color: white;
 }
 

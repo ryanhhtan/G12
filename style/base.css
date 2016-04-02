@@ -24,6 +24,7 @@
     margin-right: 10px;
     color: #A0A09F;
     font-weight: bold;
+    font-size: inherit;
 }
 
 #logo {
@@ -163,21 +164,22 @@
 }
 
 #login {
-    width: 400px;
-    height: 300px;
-    border: 1px solid blue;
+    width: 30%;
+    border: 1px solid #A0A09F;
     padding: 10px;
-    background-color: #c7c7f9;
+    color: #A0A09F;
+    background-color: #2F2F2E;
     position: relative;
     top: 100px;
     margin: auto;
 }
 
 #register {
-    width: 40%;
+    width: 30%;
     border: 1px solid blue;
     padding: 10px;
-    background-color: #c7c7f9;
+    background-color: #2F2F2E;
+    color: #A0A09F;
     margin: auto;
 }
 

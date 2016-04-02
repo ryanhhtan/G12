@@ -3,7 +3,10 @@
     ob_start();
 
     //Start the session
-    session_start();
+    if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    } 
 
     //Include config file
 

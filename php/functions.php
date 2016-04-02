@@ -1,6 +1,9 @@
 <?php
     //Start session
-    session_start();
+    if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    } 
 
     //include database config
     require_once("config.php");
@@ -170,10 +173,10 @@
                 $stmt->setFetchMode(PDO::FETCH_ASSOC);
                 $result = $stmt->fetch();
                 
-                if($userName == $result['userName'] && $password == $result['passwd']) {
+                if(strtolower($userName) == strtolower($result['userName']) && $password == $result['passwd']) {
                     //Login successfully
                     session_regenerate_id();
-                    $_SESSION['SESS_USER_NAME'] = $userName;
+                    $_SESSION['SESS_USER_NAME'] = $result['userName'];
                     session_write_close();
                     return TRUE;
                 } else {

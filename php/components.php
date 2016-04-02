@@ -1,5 +1,8 @@
 <?php
-session_start();
+    if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    } 
 
 require_once("config.php"); 
 
@@ -183,7 +186,7 @@ function loadRegisterForm() {?>
              echo '<div class="topicTitle">' . 'Select a topic from the left.' . '</div><br>';
          } else {
              $result = $stmt->fetch();
-             echo '<div class="topicTitle"> Topic: ' . $result[topic] . '</div><br>';
+             echo '<div class="topicTitle"> Topic: ' . $result['topic'] . '</div><br>';
              echo '<div class="topicDetails">';
              echo '<a href="#">' .$result['userName'] . '</a>  wrote at ' . $result['datetime'] . ': <br>';
              echo '<div class="postContent">' .$result['content'] .'</div>';

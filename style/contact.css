@@ -17,17 +17,17 @@ label {
 }
 
 textarea {
-	width: 100%;
+	width: 40%;
 }
 
 .textfield{
-	width: 50%;
+	width: 40%;
 }
 
 .contactus {
 	margin: auto;
 	background-color: white;
-	color: green;
+	color: #A0A09F;
 	padding: 5px;
     width: 80%;
 }
@@ -59,4 +59,10 @@ textarea {
     background-image: url("../images/contactus-medium.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#gmap_canvas{
+    position: absolute;
+    right: 200px;
+    top: 50px;
 }

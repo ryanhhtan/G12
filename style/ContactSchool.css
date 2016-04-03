@@ -30,6 +30,7 @@
 
 #content h1, h2, p, a{
 	padding: 0px 20px 0px 20px;
+    text-indent: 0px;
 }
 
 #content h3{

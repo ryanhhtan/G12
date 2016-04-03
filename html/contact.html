@@ -26,10 +26,6 @@
 		<div id="content">
 			<div id="contactpage">
 				<div class="contactus">
-				<p>Have any suggestion? Tell us to improve our website! 
-                   The message you write and the information you write here will be kept private.
-                   If you want to post in public, please go to <a href="../php/comment.php">Comment Section</a>.
-                </p>
 				</div>
 				<div class="contactus">
 					<form id="contactform" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
@@ -61,12 +57,21 @@
 						<input type="submit" value="Submit">
                         <input type="reset" value="Reset">
 					</form>
+                    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'>
+                    </script>
+                    <div style='overflow:hidden;height:401px;width:646px;'>
+                        <div id='gmap_canvas' style='height:401px;width:646px;'>
+                        </div>
+                        <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+                    </div>
+                    <a href='https://embedmaps.net'>www.embedmaps.net</a> 
+                    <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=693a6b451166ea5797a5d02b3965306b3a5daf74'>
+                    </script>
+                    <script type='text/javascript'>function init_map(){var myOptions = {zoom:13,center:new google.maps.LatLng(49.2509735,-123.00279929999999),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(49.2509735,-123.00279929999999)});infowindow = new google.maps.InfoWindow({content:'<strong>BCIT</strong><br>3700 Willingdon Ave<br>V5G 3H2 Burnaby<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+                    </script>
 				</div>
 			</div>		
 		</div>
-
 		<div id="footer"></div>
 	</body>
-
-
 </html>

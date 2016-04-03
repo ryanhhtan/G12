@@ -40,14 +40,14 @@ nav a:visited {color: #66c2ff;
 			background-image: url("../images/vancouver-1.jpg");
 			background-repeat: no-repeat;
 			background-size: 100%;
-			height:250px;
-			font-size: 35px;
-			padding-top:60px;
-			color: rgba(255, 255,255,0.7);
-			letter-spacing:0.5em;
+			height:400px;
+			font-size: 40px;
+			padding-top:140px;
+			color: rgba(255, 255,255,0.8);
+			letter-spacing:0.6em;
 			
 }
-.content {	width:950px;
+.content {	width: 1080px;
 			margin:auto;
             position: relative;
 }			
@@ -110,12 +110,12 @@ nav a:visited {color: #66c2ff;
 }
 h3		{font-size: 40px;}
 div a:link {
-    color: green;
+    color: #00ccff;
     background-color: transparent;
     text-decoration: none;
 }
 div a:visited {
-    color: #00ccff;
+    color: yellow;
     background-color: transparent;
     text-decoration: none;
 }
@@ -125,7 +125,7 @@ div a:hover {
     text-decoration: underline;
 }
 div a:active {
-    color: yellow;
+    color: #ff6a00;
     background-color: transparent;
     text-decoration: underline;
 }

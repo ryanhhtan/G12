@@ -20,7 +20,7 @@
 		<div id="header">
 			<!--logo-->
 			<div id="logo">
-			<a href="../index.php"><img src="../images/logo.png" title="logo" alt="Logo" style="width: 100px; height: 100px"></a>
+			<a href="../index.php"><img src="../images/LOGO1.jpg" title="logo" alt="Logo" style="height: 100px"></a>
 			</div>
 
            <div id="loginbar">

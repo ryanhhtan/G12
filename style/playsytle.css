@@ -82,9 +82,13 @@ div li {
 .text {
     float: right;
     border:6px double #ffff99;
-    height: 330px;
+    height: 370px;
     width: 500px;
-    margin-top: 50px;
+    margin-top: 30px;
     font-size: 150%;
+    padding-left: 10px;
+}
+.F{
+    margin-top: 130px;
 }
 

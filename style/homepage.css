@@ -40,8 +40,6 @@
 }
 
 
-
-
 #picture {
     width: 100%;
     min-width: 400px;
@@ -49,12 +47,15 @@
     background-image: url(../images/bannerhome.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+    text-align: center;
+    font-size: 35px;
+    padding-top:60px;
+    color: rgba(255, 255,255,0.7);
+    letter-spacing:0.5em;
 }
 
-.galleries a {
-    text-decoration: none;
-    font-size: larger;
-    display: block;
-    width:  400px;
-    text-align: center;
+.galleries h2 {
+font-family: 'Petit Formal Script', cursive;
+text-align: center;
+color: red;
 }

@@ -37,6 +37,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="style/homepage.css" rel="stylesheet" type="text/css">
         <link href="style/base.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Petit+Formal+Script' rel='stylesheet' type='text/css'>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <script src="scripts/addheaderfooter_jquery.js"></script>
         <script src="scripts/popupForms.js"></script>
@@ -52,24 +53,24 @@
 		
 		<!--conten-->
         <div id="picture">
-        <!--<img src="images/bannerhome.jpg" alt="banner">-->
+        <h1>Survival Guide</h1>
         </div>
 		<div id="content">
-			<div id="slogan"><p>Our Slogan</p></div>
+            <!--
+			<div id="slogan"><p>Our Slogan</p></div> 
+            -->
 			<div id="galleriesarea">
 				<div id="studygallery" class="galleries">
+                    <h2>School Info</h2>
 					<a href="html/schools.html" title="Study information section">
-                        School Information
-                        <br>
-						<img id="schoolPhotos" title="schools" src="images/BCIT/bcit.jpg" alt="study information picture">
+					<img id="schoolPhotos" title="schools" src="images/BCIT/bcit.jpg" alt="study information picture">
 					</a>
                     
 				</div>
 				<div id="livinggallery" class="galleries">
+                    <h2>Living Info</h2>
 					<a href="html/livingHomepage.html" title="Living information section">
-                        Living Information
-                        <br>
-						<img id="livingPhotos" title="living info" src="images/Entertainment/entertainment.jpg" alt="living information picture">
+					<img id="livingPhotos" title="living info" src="images/Entertainment/entertainment.jpg" alt="living information picture">
 					</a>
 				</div>
 			</div>

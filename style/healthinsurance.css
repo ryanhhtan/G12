@@ -32,15 +32,24 @@
     font-family: Arial;
     font-size: large;
     font-weight: bold;
+    text-align: center;
 }
 
 #more{
     font-family: Arial;
     font-size: x-large;
+    text-align: center;
 }
 
 .hyperlinks{
     list-style: none;
 	padding-top: 5px;
 	padding-left: 30px;
+    text-align: center;
+}
+
+.content{
+        width: 1080px;
+        margin:0 auto;
+        padding-top: 30px;
 }

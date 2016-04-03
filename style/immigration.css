@@ -1,5 +1,5 @@
 #content{
-    margin: auto;
+    margin:0 auto;
     background-color:#e6ffff;
 }
 
@@ -30,17 +30,29 @@
 
 #immigration{
     font-family: Arial;
-    font-size: larger;
+    font-size: x-large;
     font-weight: bold;
 }
 
 #more{
     font-family: Arial;
-    font-size: x-large;
+    font-size: larger;
+    text-align: center;
 }
 
 .hyperlinks{
     list-style: none;
 	padding-top: 5px;
 	padding-left: 30px;
+    text-align: center;
+}
+
+#immigration{
+    text-align: center;
+}
+
+.content{
+        width: 1080px;
+        margin:0 auto;
+        padding-top: 30px;
 }

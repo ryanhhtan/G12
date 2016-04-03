@@ -29,6 +29,7 @@
 
 #logo {
 	float: left;
+    position: absolute;
 }
 
 #navigation {

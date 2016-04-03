@@ -50,7 +50,13 @@ body		{background-color:white;
 			border-bottom:1px solid #ff6666;
 			font-family:Cursive;
 }
-
+.leftpart{	
+			padding-top:10px;
+			float:left;
+			width:50%;}
+.rightpart{	float:right;
+            padding-top:10px;
+			width:50%;}
 h2		{	text-align: center;}
 .downtown{  width:450px; 
 			border-bottom:5px solid  #bbff99;

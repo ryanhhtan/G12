@@ -248,7 +248,7 @@ function loadRegisterForm() {?>
                 <tr>
                     <td>E-mail:</td>
 <?php 
-                if ($queryUserName == $_SESSION['SESS_USER_NAME']){
+                if (isset($_SESSION['SESS_USER_NAME']) && $queryUserName == $_SESSION['SESS_USER_NAME']){
                     echo '<td>' . $email . '</td>';
                 } else {
                     echo '<td>******</td>';

@@ -1,6 +1,10 @@
 <?php
     //Start session
-    session_start();
+
+    if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    } 
 
     //Include database configure
     require_once("config.php");

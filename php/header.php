@@ -1,6 +1,9 @@
 <?php
     //Start session
-    session_start();
+    if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    } 
 
     //Include components
     require_once('components.php');
@@ -37,9 +40,9 @@
 				<div id="menubar">
 					<ul id="mainmenu">
 						<li id="homepage"><a href="../index.php" title="homepage">Home</a></li>
-						<li id="studyinfomenu"><a href="../html/schools.html" title="Schools Info">Study Info</a></li>
-						<li id="livinginfomenu"><a href="../html/livingHomepage.html" title="Schools Info">Living Info</a></li>
-						<li id="interactingmenu">Interacting</li>
+						<li id="studyinfomenu"><a href="../html/schools.html" title="Schools Info">Study</a></li>
+						<li id="livinginfomenu"><a href="../html/livingHomepage.html" title="Schools Info">Living</a></li>
+						<li id="interactingmenu">Contact</li>
                         <li id="aboutmenu"><a href="../html/about.html" title="about">About Us</a></li>
 						<li id="sitemapmenu"><a href="../html/sitemap.html" title="sitemap">Sitemap</a></li>
 					</ul>
@@ -58,16 +61,16 @@
 					</div>
 					<div id="livinginfo" class="menuitems">
 						<ul  class="submenu">
-                            <li><a href="../html/Immigration.html" title="Immigration & Taxes">Immigration & Taxes</a></li>
+                            <li><a href="../html/Immigration.html" title="Immigration & Taxes">Immigration</a></li>
 							<li><a href="../html/sightView.html" title="Sight Viewing">Sight Viewing</a></li>
 							<li><a href="../html/entertaiment.html" title="Entertainment">Entertainment</a></li>
-							<li><a href="../html/healthinsurance.html" title="Health Insurance">Health Insurance</a></li>
+							<li><a href="../html/healthinsurance.html" title="Health Insurance">Health</a></li>
                         </ul>
 					</div>
 					<div id="interaction" class="menuitems">
 						<ul  class="submenu">
 							<li><a href="../html/contact.html" title="Contact us">Contact Us</a></li>
-                            <li><a href="../php/comment.php" title="Post a comment">Posting Comments</a></li>
+                            <li><a href="../php/comment.php" title="Post a comment">Comments</a></li>
 						</ul>
 					</div>			
 				</div>

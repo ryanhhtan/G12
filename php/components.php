@@ -20,6 +20,8 @@ $hintEmail = "*";
 $hintTopic = "*";
 $hintComment = "*";
 
+$currentPostId = "";
+
 
  function loadMaskPane() {?>
          <div id="maskPane">
@@ -164,7 +166,7 @@ function loadRegisterForm() {?>
         <textarea id="replyComment" cols="60" rows="10" name="comment"></textarea>
         <br>
         <input type="hidden" value="replyPost" name="action">
-        <input type="hidden" value="<?php echo $GLOBALS[currentPostId]?>" name="postId">
+        <input type="hidden" value="<?php echo $GLOBALS['currentPostId']?>" name="postId">
         <input type="submit" value="Submit">
         </form>
         <br>
@@ -180,7 +182,7 @@ function loadRegisterForm() {?>
      try {
          $conn = new PDO("mysql:host=" .DB_HOST ."; dbname=" .DB_DATABASE, DB_USER, DB_PASSWORD);
          $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-         $sql = "SELECT userName, topic, datetime, content FROM account, topic WHERE topic.id = '" . $postId . "' AND topic.userId = account.id";
+         $sql = "SELECT userName, topic, datetime, content FROM account, topic WHERE topic.id = '" . $postId . "' AND topic.userId = account.id ORDER BY datetime ASC";
          $stmt = $conn->query($sql);
          if ($stmt->rowCount() == 0 ) {
              echo '<div class="topicTitle">' . 'Select a topic from the left.' . '</div><br>';

@@ -56,10 +56,11 @@
         }
     }
 
-    if ($_GET) {
-        $currentPostId = sanitizeInput($_GET['postId']);
-    } else {
-        $currentPostId = -1;
+    if ($_SERVER["REQUEST_METHOD"] == "GET") {
+        if(count($_GET)>0) {
+            $currentPostId = sanitizeInput($_GET['postId']);
+        }
+        
     }
 ?>
 
@@ -96,10 +97,7 @@
                     </div>
                 <div id="postDetails">
                     <?php
-                        if ($currentPostId) {
-                           loadPostDetails($currentPostId); 
-                        }
-                        
+                    loadPostDetails($currentPostId);                         
                     ?>
                      </div>
                 </div>

@@ -1,5 +1,5 @@
 #topdiv{
-	height: 500px;
+	height: 400px;
     padding: 0px 0px 0px 0px;
     background-image: url(../images/CommentBoard/CampusLife.jpg);
     background-size: 100%;
@@ -27,12 +27,12 @@
     box-shadow: 5px 5px 2.5px #816011;
 }
 
-#content h1, h2, p, a{
+#MainContent h1, h2, p{
 	padding: 0px 20px 0px 20px;
     text-indent: 0px;
 }
 
-#content h3{
+#MainContent h3{
     padding-left: 40px; 
 }
 
@@ -48,7 +48,7 @@
     font-size: 50px;
 }
 
-#content h2 {
+#MainContent h2 {
     border: thin solid black;
     padding-left: 30px; 
 }

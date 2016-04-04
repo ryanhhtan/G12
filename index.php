@@ -102,13 +102,13 @@
 			<div id="switchPicture">
 			<ul id="pictureContainner">
 				<li>
-					<img src="images/bridge.jpg" alt="slider1">
+					<img src="images/v1.jpg" alt="slider1">
 				</li>
 				<li>
-					<img src="images/stanly.jpg" alt="slider2">
+					<img src="images/v2.jpg" alt="slider2">
 				</li>
 				<li>
-					<img src="images/victoria.jpg" alt="slider3">
+					<img src="images/v3.jpg" alt="slider3">
 				</li>
 			</ul>
 			</div>

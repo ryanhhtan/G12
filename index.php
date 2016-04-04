@@ -79,7 +79,7 @@
 				</div>
                 <div id="galleryText">
                 <h1><span id="gquout">“</span>Do better choice!</h1>
-                    <div id="bt1"><a href="../html/schools.html" title="Schools Info"><button type="button" class="bt1">Get Start</button></a></div>
+                    <div id="bt1"><a href="../html/schools.html" title="school Info"><button type="button" class="bt1">Get Start</button></a></div>
                  </div>
 			</div>
 
@@ -87,13 +87,13 @@
                 	<div id="livinggallery" class="galleries">
                         <h2>Living Information</h2>
 					    <a href="html/livingHomepage.html" title="Living information section">
-					    <img id="livingPhotos" title="living info" src="images/Entertainment/entertainment.jpg" alt="living information picture">
+					    <img id="livingPhotos" title="living info" src="images/g1.jpg" alt="living information picture">
 					    </a>
 				   </div>
                    <div id="livingpartText">
                        <h1><span id="lquote">“</span>Find the most intresting things in this city!</h1>
                            <div id="bt2">
-                               <a href="../html/livingHomepage.html" title="Schools Info">
+                               <a href="../html/livingHomepage.html" title="living Info">
                                    <button type="button" class="bt2">Get Start</button>
                                </a>
                            </div>

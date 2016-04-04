@@ -11,10 +11,10 @@
 			schoolPhotoset[3]="images/Langara/langara.jpg";
 			
 			var livingPhotoset = new Array();
-			livingPhotoset[0]="images/Entertainment/entertainment.jpg";
-			livingPhotoset[1]="images/ImmigrationAndTax/tax.jpg";
-			livingPhotoset[2]="images/health.jpg";
-			livingPhotoset[3]="images/sightview.jpg";
+			livingPhotoset[0]="images/g1.jpg";
+			livingPhotoset[1]="images/g2.jpg";
+			livingPhotoset[2]="images/g3.jpg";
+			livingPhotoset[3]="images/g4.jpg";
 			
 			
 			setInterval(changePhotoStudy, timeIntervalStudy);

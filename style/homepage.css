@@ -1,6 +1,5 @@
 #content {
     position: relative;
-    background-color: #e6ffff;
 }
 
 .galleries {
@@ -24,18 +23,25 @@
 #galleriesarea {
 	position: relative;
     height: 350px;
+    padding-bottom: 50px;
+    background-color: #2F2F2E;
     
 }
 
 #studygallery {
 	position: absolute;
-	left: 20%;
+	left: 10%;
 	top: 0;
 }
-
+#livingpart{
+    position: relative;
+    height: 350px;
+    background-color: orange;
+    padding-bottom: 50px;
+}
 #livinggallery{
 	position: absolute;
-	left: 55%;
+	left: 70%;
 	top: 0;
 }
 
@@ -53,13 +59,30 @@
     color: rgba(255, 255,255,0.8);
     letter-spacing:0.6em;
 }
-
+#livingpartText {
+	position: absolute;
+	left: 10%;
+    top: 40%;
+    color: #2F2F2E;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif ;
+}
+#galleryText {
+	position: absolute;
+	left: 60%;
+    top: 40%;
+    color: rgba(255, 255,255,0.8);
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif ;
+}
 .galleries h2 {
 font-family: 'Petit Formal Script', cursive;
 text-align: center;
-color: red;
+color: rgba(47, 47, 46, 1);
 }
-
+.galleries1 h2 {
+font-family: 'Petit Formal Script', cursive;
+text-align: center;
+color: orange;
+}
 
 #slide {
     position: relative;
@@ -116,4 +139,38 @@ width:33.3%;
 height:100%;
 margin:0;
 }
+#gquote{
+    font-size: x-large;
+}
+#lquote{
+    font-size: x-large;
+}
+#bt1{margin:0 auto;
+     width: 100px;
+     
+    
+}
+#bt2{margin:0 auto;
+     width: 100px;
+}
+.bt1{background-color: orange;
+     color: #2F2F2E;
+     border: 0 none;
+     padding: 7px 15px;
+    
+}
+.bt2{
+    background-color: #2F2F2E;
+    color: orange;
+    border: 0 none;
+    padding: 7px 15px;
+}
 
+.bt1:hover{
+    background-color: #3aa3bf;
+}
+
+.bt2:hover{
+    background-color: #3aa3bf;
+    color: #2F2F2E;
+}

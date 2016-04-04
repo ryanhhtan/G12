@@ -56,49 +56,7 @@
 		<!--header with logo, navigation-->
 		<div id="header">
         </div>
-		
-		<!--conten-->
-        <!--_____________________LANDING PAGE SLIDER___________________________________-->
-        <!--
-	<div id="myCarousel" class="carousel slide" class="over" data-ride="carousel">
-			<ol class="carousel-indicators">
-					<li data-target="myCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="myCarousel" data-slide-to="1"></li>
-					<li data-target="myCarousel" data-slide-to="2"></li>
-			</ol>
-
-
-		<div class="carousel-inner" role="listbox">
-			<div class="item active">
-				<img src="images/stanly.jpg" alt="slider1" class="img-responsive" style="width:100%; height: 800px">
-			</div>
-
-			<div class="item">
-				<img src="images/bridge.jpg" alt="slider2" class="img-responsive" style="width:100%; height: 800px">
-			</div>
-
-			<div class="item">
-				<img src="images/victoria.jpg" alt="slider3" class="img-responsive" style="width:100%; height: 800px">
-			</div>
-		</div>
-
-		<a class="carousel-control left" href="#myCarousel" data-slide="prev">
-			<span class="icon-prev"></span>
-		</a>
-		<a class="carousel-control right" href="#myCarousel" data-slide="next">
-			<span class="icon-next"></span>
-		</a>
-
-		<script>$('.carousel').carousel({
-        interval: 4000, //changes the speed
-        pause: 'none' //removes mouseover pause
-			})
-		</script>
-	</div>
-	-->
-
 		<div id="slide">
-
 			<div id="switchPicture">
 			<ul id="pictureContainner">
 				<li>
@@ -118,29 +76,40 @@
 			<div id="switchRight">
 			>>>
 			</div>
-
 		</div>
 		<div id="content">
 			<div id="galleriesarea">
-				<div id="studygallery" class="galleries">
+				<div id="studygallery" class="galleries1">
                     <h2>School Information</h2>
 					<a href="html/schools.html" title="Study information section">
 					<img id="schoolPhotos" title="schools" src="images/BCIT/bcit.jpg" alt="study information picture">
 					</a>
 				</div>
-
-				<div id="livinggallery" class="galleries">
-                    <h2>Living Information</h2>
-					<a href="html/livingHomepage.html" title="Living information section">
-					<img id="livingPhotos" title="living info" src="images/Entertainment/entertainment.jpg" alt="living information picture">
-					</a>
-				</div>
+                <div id="galleryText">
+                <h1><span id="gquout">“</span>Do better choice!</h1>
+                    <div id="bt1"><a href="../html/schools.html" title="Schools Info"><button type="button" class="bt1">Get Start</button></a></div>
+                 </div>
 			</div>
+
+            <div id="livingpart">
+                	<div id="livinggallery" class="galleries">
+                        <h2>Living Information</h2>
+					    <a href="html/livingHomepage.html" title="Living information section">
+					    <img id="livingPhotos" title="living info" src="images/Entertainment/entertainment.jpg" alt="living information picture">
+					    </a>
+				   </div>
+                   <div id="livingpartText">
+                       <h1><span id="lquote">“</span>Find the most intresting things in this city!</h1>
+                           <div id="bt2">
+                               <a href="../html/livingHomepage.html" title="Schools Info">
+                                   <button type="button" class="bt2">Get Start</button>
+                               </a>
+                           </div>
+                   </div>
+            </div>
 		</div>
 
-		
 		<script src="scripts/switchphotos.js"></script>
-
         <div class="hidden">
         <?php
             loadLoginForm($mask, $loginPaneVisibility);
@@ -148,13 +117,9 @@
         </div>
 
 		<div id="footer">
-
         </div>	
 	</body>
-
-
 </html>
-
 <?php
 // end output buffering and send our HTML to the browser as a whole
 ob_end_flush();

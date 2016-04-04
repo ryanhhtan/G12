@@ -131,7 +131,9 @@
     text-align: center;
     color: #A0A09F;
 }
-
+#footertext p{
+    margin-top: 0px;
+}
 .nostyle {
     list-style-type: none;
 }

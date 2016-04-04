@@ -1,5 +1,9 @@
-body		{background-color:white;
-		 clear:left;
+body		{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), url(../images/test-background-img-2.jpg);
+    background-attachment: fixed;
+    background-position: bottom;
+    margin: 0px 0px 0px 0px;
+	clear:left;
 }
 .webName{	
 			
@@ -32,7 +36,6 @@ nav a:hover {color: #99ff99;
 nav a:visited {color: #66c2ff;
 }
 .main	{	
-			background-color:white;
 			clear:left;
 
 }

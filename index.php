@@ -41,6 +41,10 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <script src="scripts/addheaderfooter_jquery.js"></script>
         <script src="scripts/popupForms.js"></script>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 
 	</head>
@@ -52,9 +56,41 @@
         </div>
 		
 		<!--conten-->
-        <div id="picture">
-        <h1>Survival Guide</h1>
-        </div>
+        <!--_____________________LANDING PAGE SLIDER___________________________________-->
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+					<li data-target="myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="myCarousel" data-slide-to="1"></li>
+					<li data-target="myCarousel" data-slide-to="2"></li>
+			</ol>
+
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<img src="hui.jpg" alt="slider1" class="img-responsive" style="width:100%">
+			</div>
+
+			<div class="item">
+				<img src="stanly.jpg" alt="slider2" class="img-responsive" style="width:100%">
+			</div>
+
+			<div class="item">
+				<img src="grouse.jpg" alt="slider3" class="img-responsive" style="width:100%">
+			</div>
+		</div>
+
+		<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+			<span class="icon-prev"></span>
+		</a>
+		<a class="carousel-control right" href="#myCarousel" data-slide="next">
+			<span class="icon-next"></span>
+		</a>
+
+		<script>$('.carousel').carousel({
+        interval: 4000, //changes the speed
+        pause: 'none' //removes mouseover pause
+			})
+		</script>
+	</div>
 		<div id="content">
             <!--
 			<div id="slogan"><p>Our Slogan</p></div> 

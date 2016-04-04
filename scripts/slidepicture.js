@@ -1,5 +1,6 @@
     
     var currentPicture = 0;
+
     $(document).ready(function () {
     	$("#switchLeft").click(function(){
     		moveLeft();
@@ -8,22 +9,24 @@
     	$("#switchRight").click(function(){
     		moveRight();
     		setPicturePosition();
+    		
     	});
 
     });
 
+
     function moveLeft() {
-    	if(currentPicture < 2) {
-    		currentPicture ++;
+    	currentPicture ++;
+    	if(currentPicture == 3) {
+    		currentPicture = 0;
     	} 
-
-
     }
 
         function moveRight() {
-    	if(currentPicture > 0) {
-    		currentPicture --;
-    	} 
+    	currentPicture --;
+    	if (currentPicture == -1) {
+    		currentPicture = 2;
+    	}
 
     }
 
@@ -31,3 +34,10 @@
     	    var offset = currentPicture * 100;
     		$("#pictureContainner").css("left", "-" + offset + "%");
     }
+
+    function autoSlide() {
+    	setInterval(moveLeft, 3000); 
+    	}
+
+
+

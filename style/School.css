@@ -1,5 +1,4 @@
 .block{
-	width: 1080px;
 	height: 20px;
 }
 
@@ -107,5 +106,5 @@ a:visited{
     letter-spacing:0.6em;
     text-align: center;
     padding-top: 140px;
-    margin: 0px -20px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }

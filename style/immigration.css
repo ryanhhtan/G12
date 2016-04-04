@@ -29,7 +29,7 @@
 
 #immigration{
     font-family: Arial;
-    font-size: x-large;
+    font-size: large;
     font-weight: bold;
 }
 
@@ -46,14 +46,11 @@
     text-align: center;
 }
 
-#immigration{
-    text-align: center;
-}
-
 .content{
         width: 1080px;
         margin:0 auto;
         padding-top: 30px;
+        font-size: large;
 }
 
 body {

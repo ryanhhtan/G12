@@ -121,17 +121,14 @@
 
 		</div>
 		<div id="content">
-            <!--
-			<div id="slogan"><p>Our Slogan</p></div> 
-            -->
 			<div id="galleriesarea">
 				<div id="studygallery" class="galleries">
                     <h2>School Info</h2>
 					<a href="html/schools.html" title="Study information section">
 					<img id="schoolPhotos" title="schools" src="images/BCIT/bcit.jpg" alt="study information picture">
 					</a>
-                    
 				</div>
+
 				<div id="livinggallery" class="galleries">
                     <h2>Living Info</h2>
 					<a href="html/livingHomepage.html" title="Living information section">

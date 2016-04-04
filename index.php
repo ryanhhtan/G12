@@ -111,8 +111,6 @@
 				</div>
 			</div>
 		</div>
-
-		
 		<script src="scripts/switchphotos.js"></script>
 
         <div class="hidden">
@@ -125,8 +123,6 @@
 
         </div>	
 	</body>
-
-
 </html>
 
 <?php

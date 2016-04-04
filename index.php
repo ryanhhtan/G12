@@ -41,11 +41,13 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <script src="scripts/addheaderfooter_jquery.js"></script>
         <script src="scripts/popupForms.js"></script>
+        <script src="scripts/slidepicture.js"></script>
+        <!--
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
+		-->
 
 	</head>
 	
@@ -57,12 +59,14 @@
 		
 		<!--conten-->
         <!--_____________________LANDING PAGE SLIDER___________________________________-->
+        <!--
 	<div id="myCarousel" class="carousel slide" class="over" data-ride="carousel">
 			<ol class="carousel-indicators">
 					<li data-target="myCarousel" data-slide-to="0" class="active"></li>
 					<li data-target="myCarousel" data-slide-to="1"></li>
 					<li data-target="myCarousel" data-slide-to="2"></li>
 			</ol>
+
 
 		<div class="carousel-inner" role="listbox">
 			<div class="item active">
@@ -91,6 +95,31 @@
 			})
 		</script>
 	</div>
+	-->
+
+		<div id="slide">
+
+			<div id="switchPicture">
+			<ul id="pictureContainner">
+				<li>
+					<img src="images/bridge.jpg" alt="slider1">
+				</li>
+				<li>
+					<img src="images/stanly.jpg" alt="slider2">
+				</li>
+				<li>
+					<img src="images/victoria.jpg" alt="slider3">
+				</li>
+			</ul>
+			</div>
+			<div id="switchLeft">
+			<<<
+			</div>
+			<div id="switchRight">
+			>>>
+			</div>
+
+		</div>
 		<div id="content">
             <!--
 			<div id="slogan"><p>Our Slogan</p></div> 

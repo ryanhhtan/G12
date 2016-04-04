@@ -1,5 +1,6 @@
     
     var currentPicture = 0;
+    var autoAddjustment = 1;
 
     $(document).ready(function () {
     	$("#switchLeft").click(function(){
@@ -11,6 +12,8 @@
     		setPicturePosition();
     		
     	});
+
+    	setInterval(autoSlide, 4000);
 
     });
 
@@ -31,13 +34,26 @@
     }
 
     function setPicturePosition(){
-    	    var offset = currentPicture * 100;
-    		$("#pictureContainner").css("left", "-" + offset + "%");
+	    var offset = currentPicture * 100;
+		$("#pictureContainner").css("left", "-" + offset + "%");
     }
 
     function autoSlide() {
-    	setInterval(moveLeft, 3000); 
+    	if (currentPicture == 2){
+    		autoAddjustment = -1;
     	}
+    		
+    	if (currentPicture == 0) {
+    		autoAddjustment = 1;
+    	}
+
+    	currentPicture += autoAddjustment;
+    	setPicturePosition();
+
+    	}
+
+
+
 
 
 

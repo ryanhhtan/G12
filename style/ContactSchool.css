@@ -27,7 +27,7 @@
     box-shadow: 5px 5px 2.5px #816011;
 }
 
-#content h1, h2, p{
+#MainContent h1, h2, p{
 	padding: 0px 20px 0px 20px;
     text-indent: 0px;
 }

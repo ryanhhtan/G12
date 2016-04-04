@@ -59,3 +59,7 @@ font-family: 'Petit Formal Script', cursive;
 text-align: center;
 color: red;
 }
+
+.over{
+    z-index: 1;
+}

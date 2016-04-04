@@ -57,7 +57,7 @@
 		
 		<!--conten-->
         <!--_____________________LANDING PAGE SLIDER___________________________________-->
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	<div id="myCarousel" class="carousel slide" class="over" data-ride="carousel">
 			<ol class="carousel-indicators">
 					<li data-target="myCarousel" data-slide-to="0" class="active"></li>
 					<li data-target="myCarousel" data-slide-to="1"></li>
@@ -66,15 +66,15 @@
 
 		<div class="carousel-inner" role="listbox">
 			<div class="item active">
-				<img src="hui.jpg" alt="slider1" class="img-responsive" style="width:100%">
+				<img src="../images/stanly.jpg" alt="slider1" class="img-responsive" style="width:100%; height: 800px">
 			</div>
 
 			<div class="item">
-				<img src="stanly.jpg" alt="slider2" class="img-responsive" style="width:100%">
+				<img src="../images/bridge.jpg" alt="slider2" class="img-responsive" style="width:100%; height: 800px">
 			</div>
 
 			<div class="item">
-				<img src="grouse.jpg" alt="slider3" class="img-responsive" style="width:100%">
+				<img src="../images/victoria.jpg" alt="slider3" class="img-responsive" style="width:100%; height: 800px">
 			</div>
 		</div>
 
@@ -111,6 +111,8 @@
 				</div>
 			</div>
 		</div>
+
+		
 		<script src="scripts/switchphotos.js"></script>
 
         <div class="hidden">
@@ -123,6 +125,8 @@
 
         </div>	
 	</body>
+
+
 </html>
 
 <?php

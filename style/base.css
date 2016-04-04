@@ -133,6 +133,8 @@
 }
 #footertext p{
     margin-top: 0px;
+    padding: 20px;
+    margin-bottom:0px;
 }
 .nostyle {
     list-style-type: none;

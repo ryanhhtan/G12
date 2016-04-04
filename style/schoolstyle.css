@@ -57,3 +57,11 @@
             background-size: cover;
             
         }
+        #mainTitle {
+            font-size: 40px;
+            color: rgba(255, 255,255,0.8);
+            letter-spacing:0.6em;
+            text-align: center;
+            padding-top: 140px;
+            margin: 0px 0px 0px 0px;
+        }

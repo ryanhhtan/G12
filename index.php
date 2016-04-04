@@ -32,7 +32,7 @@
 
 <html lang="en">
 	<head>
-		<title>Servival Guide for International Students </title>
+		<title>Vancouver Guide</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="style/homepage.css" rel="stylesheet" type="text/css">
@@ -121,17 +121,14 @@
 
 		</div>
 		<div id="content">
-            <!--
-			<div id="slogan"><p>Our Slogan</p></div> 
-            -->
 			<div id="galleriesarea">
 				<div id="studygallery" class="galleries">
                     <h2>School Info</h2>
 					<a href="html/schools.html" title="Study information section">
 					<img id="schoolPhotos" title="schools" src="images/BCIT/bcit.jpg" alt="study information picture">
 					</a>
-                    
 				</div>
+
 				<div id="livinggallery" class="galleries">
                     <h2>Living Info</h2>
 					<a href="html/livingHomepage.html" title="Living information section">

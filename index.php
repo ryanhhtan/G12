@@ -66,15 +66,15 @@
 
 		<div class="carousel-inner" role="listbox">
 			<div class="item active">
-				<img src="../images/stanly.jpg" alt="slider1" class="img-responsive" style="width:100%; height: 800px">
+				<img src="images/stanly.jpg" alt="slider1" class="img-responsive" style="width:100%; height: 800px">
 			</div>
 
 			<div class="item">
-				<img src="../images/bridge.jpg" alt="slider2" class="img-responsive" style="width:100%; height: 800px">
+				<img src="images/bridge.jpg" alt="slider2" class="img-responsive" style="width:100%; height: 800px">
 			</div>
 
 			<div class="item">
-				<img src="../images/victoria.jpg" alt="slider3" class="img-responsive" style="width:100%; height: 800px">
+				<img src="images/victoria.jpg" alt="slider3" class="img-responsive" style="width:100%; height: 800px">
 			</div>
 		</div>
 

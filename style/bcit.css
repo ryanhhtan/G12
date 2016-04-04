@@ -1,7 +1,6 @@
 #topdiv{
 	height: 400px;
-    margin-top: 20px;
-    padding: 0px 0px 0px 0px;
+    padding: 0px -20px 0px 0px;
     background-image: url("../images/BCIT/bcitback.jpg");
     background-size: 100%;
     background-repeat: no-repeat;

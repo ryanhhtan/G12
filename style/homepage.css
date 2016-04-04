@@ -30,7 +30,7 @@
 
 #studygallery {
 	position: absolute;
-	left: 10%;
+	left: 15%;
 	top: 0;
 }
 #livingpart{
@@ -41,7 +41,7 @@
 }
 #livinggallery{
 	position: absolute;
-	left: 70%;
+	left: 65%;
 	top: 0;
 }
 
@@ -69,7 +69,7 @@
 #galleryText {
 	position: absolute;
 	left: 60%;
-    top: 40%;
+    top: 30%;
     color: rgba(255, 255,255,0.8);
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif ;
 }

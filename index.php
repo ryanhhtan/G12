@@ -32,7 +32,7 @@
 
 <html lang="en">
 	<head>
-		<title>Servival Guide for International Students </title>
+		<title>Vancouver Guide</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="style/homepage.css" rel="stylesheet" type="text/css">

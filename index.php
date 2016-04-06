@@ -78,7 +78,7 @@
 					</a>
 				</div>
                 <div id="galleryText">
-                <h1><span id="gquout">“</span>Do better choice!</h1>
+                <h1><span id="gquout">“</span>Make better choice!</h1>
                     <div id="bt1"><a href="html/schools.html" title="school Info"><button type="button" class="bt1">Get Start</button></a></div>
                  </div>
 			</div>

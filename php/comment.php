@@ -79,7 +79,10 @@
         <script src="../scripts/postFormValidation.js"></script>
         <script>
             $(document).ready(function () {
-                window.location.hash = "#content";   
+                window.location.hash = "#content";
+                if ($("#loginPane").length) {
+                    setCenter("#loginPane");
+                }
             });
         </script>
 	</head>

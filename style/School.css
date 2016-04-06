@@ -44,23 +44,6 @@ body {
     background-position: bottom;
 }
 
-
-#quicknav{
-	width: auto;
-	height: 25px;
-	float: right;
-    padding-top: 20px;
-}
-
-#quicknav ul{
-    list-style: none;
-}
-
-#quicknav ul li {
-    display: inline;
-    font-size: 1.5em;
-}
-
 p{
 	font-family: Trebuchet MS, Georia, serif;
     text-indent: 50px;

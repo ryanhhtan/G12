@@ -77,6 +77,11 @@
         <script src="../scripts/addheaderfooter_jquery.js"></script>
         <script src="../scripts/popupForms.js"></script>
         <script src="../scripts/postFormValidation.js"></script>
+        <script>
+            $(document).ready(function () {
+                window.location.hash = "#content";   
+            });
+        </script>
 	</head>
 
 	<body>

@@ -9,7 +9,7 @@ $(document).ready(function(){
 		$("#studyinfo").css("visibility", "visible");
 	});
 	
-	 $("#livinginfomenu").mouseenter(function(e){
+	 $("#livinginfomenu").mouseenter(function(){
 		 hideAllMenu();
 		$("#livinginfo").css("visibility", "visible");
 	});

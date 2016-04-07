@@ -182,7 +182,7 @@ function loadRegisterForm() {?>
      try {
          $conn = new PDO("mysql:host=" .DB_HOST ."; dbname=" .DB_DATABASE, DB_USER, DB_PASSWORD);
          $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-         $sql = "SELECT userName, topic, datetime, content FROM account, topic WHERE topic.id = '" . $postId . "' AND topic.userId = account.id ORDER BY datetime ASC";
+         $sql = "SELECT userName, topic, datetime, content FROM account, topic WHERE topic.id = '" . $postId . "' AND topic.userId = account.id ORDER BY datetime";
          $stmt = $conn->query($sql);
          if ($stmt->rowCount() == 0 ) {
              echo '<div class="topicTitle">' . 'Select a topic from the left.' . '</div><br>';
@@ -194,7 +194,7 @@ function loadRegisterForm() {?>
              echo '<div class="postContent">' .$result['content'] .'</div>';
              echo '</div>';
 
-             $sql = "SELECT userName, content, datetime FROM account, reply WHERE topicId='" . $postId . "' AND reply.userId = account.id" ;
+             $sql = "SELECT userName, content, datetime FROM account, reply WHERE topicId='" . $postId . "' AND reply.userId = account.id ORDER BY datetime" ;
              $stmt = $conn->query($sql);
              foreach($stmt->fetchAll() as $reply) {
              echo '<div class="topicDetails">';

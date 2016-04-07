@@ -49,7 +49,7 @@
 				</div>
 				<div id="menuitemarea">
 					<div id="studyinfo" class="menuitems">
-						<ul class="submenu">
+						<ul id = "studyinfoUl" class="submenu">
 							<li><a href="../html/BCIT.html">BCIT</a></li>
 							<li><a href="../html/UBC.html">UBC</a></li>
 							<li><a href="../html/SFU.html">SFU</a></li>
@@ -58,7 +58,7 @@
 						</ul>
 					</div>
 					<div id="livinginfo" class="menuitems">
-						<ul  class="submenu">
+						<ul id="livinginfoUl" class="submenu">
                             <li><a href="../html/Immigration.html" title="Immigration & Taxes">Immigration</a></li>
 							<li><a href="../html/sightView.html" title="Sight Viewing">Sight Viewing</a></li>
 							<li><a href="../html/entertaiment.html" title="Entertainment">Entertainment</a></li>
@@ -66,7 +66,7 @@
                         </ul>
 					</div>
 					<div id="interaction" class="menuitems">
-						<ul  class="submenu">
+						<ul id="interactionUl" class="submenu">
 							<li><a href="../html/contact.html" title="Contact us">Contact Us</a></li>
                             <li><a href="../php/comment.php" title="Post a comment">Comments</a></li>
 						</ul>

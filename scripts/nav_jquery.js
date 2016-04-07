@@ -35,15 +35,15 @@ $(document).ready(function(){
 		hideAllMenu();
 	});
 	
-	$("#studyinfo").mouseleave(function(){
+	$("#studyinfoUl").mouseleave(function(){
 		$("#studyinfo").css("visibility", "hidden");
 	});
 	
-	$("#livinginfo").mouseleave(function(){
+	$("#livinginfoUl").mouseleave(function(){
 		$("#livinginfo").css("visibility", "hidden");
 	});
 	
-	$("#interaction").mouseleave(function(){
+	$("#interactionUl").mouseleave(function(){
 		$("#interaction").css("visibility", "hidden");
 	});
 	

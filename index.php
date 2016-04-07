@@ -63,10 +63,10 @@
 			</ul>
 			</div>
 			<div id="switchLeft">
-			<<<
+			
 			</div>
 			<div id="switchRight">
-			>>>
+			
 			</div>
 		</div>
 		<div id="content">
